@@ -1,0 +1,21 @@
+    .school_name{
+    font-size: 22px;
+    margin-left: 10px;
+    color: #fed189;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.header, .footer {
+    min-height: 70px !important;
+}
+.myfooter{
+	position: absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background: #1a2732;
+    background-color: #1a2732;
+    border-bottom: 1px solid #f1f2f7;
+}
