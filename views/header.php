@@ -35,7 +35,7 @@
                                 <p class="blue">1 nouveau(x) message(s)</p>
                             </li>
                             <li>
-                                <a href="../public_files/#">
+                                <a href="#">
                                     <span class="photo"><img alt="avatar" src="../public_files/./img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Proviseur ADAKE</span>
@@ -66,14 +66,14 @@
                                 <p class="blue">1 nouvelle(s) notification(s)</p>
                             </li>
                             <li>
-                                <a href="../public_files/#">
+                                <a href="#">
                                     <span class="label label-primary"><i class="icon_profile"></i></span> 
                                     enregistrez vos notes au plus vite
                                     <span class="small italic pull-right">5 mins</span>
                                 </a>
                             </li>                            
                             <li>
-                                <a href="../public_files/#">Toutes les notifications</a>
+                                <a href="#">Toutes les notifications</a>
                             </li>
                         </ul>
                     </li>
@@ -90,19 +90,19 @@
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
                             <li class="eborder-top">
-                                <a href="../public_files/#"><i class="icon_profile"></i> Mon Profil</a>
+                                <a href="#"><i class="icon_profile"></i> Mon Profil</a>
                             </li>
                             <li>
-                                <a href="../public_files/#"><i class="icon_mail_alt"></i> Mes Messages</a>
+                                <a href="#"><i class="icon_mail_alt"></i> Mes Messages</a>
                             </li>
                             <li>
-                                <a href="../public_files/#"><i class="icon_chat_alt"></i> Chats</a>
+                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <a href="../public_files/documentation.html"><i class="icon_key_alt"></i> Aide</a>
+                                <a href="#"><i class="icon_key_alt"></i> Aide</a>
                             </li>
 							<li>
-                                <a href="../public_files/login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="../index.php"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             
                         </ul>
