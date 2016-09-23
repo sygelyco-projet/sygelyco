@@ -151,6 +151,8 @@
       <!--main content end-->
   </section>
   <!-- container section start -->
+  
+    <?php include("footer.php"); ?>
 
     <!-- javascripts -->
     <script src="../public_files/js/jquery.js"></script>
