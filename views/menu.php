@@ -1,75 +1,72 @@
-
-<!--sidebar start-->
+      <!--sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
                   <li class="active">
-                      <a class="" href="index.php">
+                      <a class="" href="../public_files/index.html">
                           <i class="icon_house_alt"></i>
-                          <span>Dashboard</span>
+                          <span>Accueil</span>
                       </a>
                   </li>
 				  <li class="sub-menu">
-                      <a href="javascript:;" class="">
+                      <a href="#" class="">
                           <i class="icon_document_alt"></i>
-                          <span style="font-size: 0.9em;">Consultation notes</span>
+                          <span>Module1</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="form_component.php">Sequence 1</a></li>                          
-                          <li><a class="" href="form_validation.php">Sequence 2</a></li>
+                          <li><a class="" href="../public_files/form_component.html">Sous module1</a></li>                          
+                          <li><a class="" href="../public_files/form_validation.html">sous module1</a></li>
                       </ul>
                   </li>       
                   <li class="sub-menu">
-                      <a href="javascript:;" class="">
+                      <a href="#" class="">
                           <i class="icon_desktop"></i>
-                          <span style="font-size: 0.8em;">consultation bulletins</span>
+                          <span>Module2</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="general.php">sequence 1</a></li>
-                          <li><a class="" href="buttons.php">sequence 2</a></li>
-                          <li><a class="" href="grids.php">sequence 3</a></li>
+                          <li><a class="" href="#">Sous module2</a></li>
+                          <li><a class="" href="#">sous module2</a></li>
+                          <li><a class="" href="#">sous module2</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a class="" href="widgets.php">
+                      <a class="" href="#">
                           <i class="icon_genius"></i>
-                          <span>Enseignants</span>
+                          <span>Module3</span>
                       </a>
                   </li>
                   <li>                     
-                      <a class="" href="chart-chartjs.php">
+                      <a class="" href="#">
                           <i class="icon_piechart"></i>
-                          <span>eleves</span>
+                          <span>Module4</span>
                           
                       </a>
                                          
                   </li>
                              
                   <li class="sub-menu">
-                      <a href="javascript:;" class="">
+                      <a href="#" class="">
                           <i class="icon_table"></i>
-                          <span>Tables</span>
+                          <span>Module5</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="basic_table.php">Basic Table</a></li>
+                          <li><a class="" href="#">Sous module5</a></li>
                       </ul>
                   </li>
                   
                   <li class="sub-menu">
-                      <a href="javascript:;" class="">
+                      <a href="#" class="">
                           <i class="icon_documents_alt"></i>
-                          <span>Pages</span>
+                          <span>Module6</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">                          
-                          <li><a class="" href="profile.php">Profile</a></li>
-                          <li><a class="" href="login.php"><span>Login Page</span></a></li>
-                          <li><a class="" href="blank.php">Blank Page</a></li>
-                          <li><a class="" href="404.php">404 Error</a></li>
+                          <li><a class="" href="#">sous Module6</a></li>
+                          <li><a class="" href="#">sous Module6</a></li>
                       </ul>
                   </li>
                   

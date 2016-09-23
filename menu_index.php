@@ -10,6 +10,12 @@
                           <span>Accueil</span>
                       </a>
                   </li>
+				  <li class="">
+                      <a href="#" class="">
+                          <i class="icon_documents_alt"></i>
+                          <span>Consultation hors connexion</span>
+                      </a>
+                  </li>
                   <li>
                       <a class="" href="#">
                           <i class="icon_genius"></i>

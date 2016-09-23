@@ -60,19 +60,18 @@
                                               <p class="login-img">connexion<i class="icon_lock_alt"></i></p>
                                           </div>
                                           <div class="modal-body">
-                                              <form class="form-inline" role="form">
-                                                       <form class="login-form" name="connexionForm" id="connexionForm" action="#">        
+                                                       <form class="form-inline" name="connexionForm" id="connexionForm" action="views/home.php" method="post">        
         <div class="login-wrap">
             <p>		    
 			<span id="erreur"></span><!-- span qui contiendra les éventuels messages d'erreur -->
 		    </p>
             <div class="input-group">
               <span class="input-group-addon"><i class="icon_profile"></i></span>
-              <input type="text" class="form-control" placeholder="Username" name="login" id="login" autofocus>
+              <input type="text" class="form-control" placeholder="Username" name="login" id="login" autofocus required/>
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                <input type="password" class="form-control" name="pass" id="pass" placeholder="Password">
+                <input type="password" class="form-control" name="pass" id="pass" placeholder="Password" required/>
             </div>
             <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Remember me
