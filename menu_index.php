@@ -13,7 +13,7 @@
 				  <li class="">
                       <a href="#" class="">
                           <i class="icon_documents_alt"></i>
-                          <span>Consultation hors connexion</span>
+                          <span>Consultations</span>
                       </a>
                   </li>
                   <li>
