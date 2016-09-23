@@ -1,7 +1,7 @@
 <div style="margin-bottom: -30px;
     z-index: -1;
     position: relative;
-    height: 50px;" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    height: 80px;" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
   	<div class="container">
   			<center>SYGELYCO DESIGN BY DAK-SOFT
 			</br>

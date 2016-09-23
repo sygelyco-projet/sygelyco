@@ -1,5 +1,5 @@
 <link href="Public_files/css/myheadcss.css" rel="stylesheet">
-      <header class="header dark-bg" style="height:30px">
+      <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
@@ -24,8 +24,10 @@
             <div class="top-nav notification-row">            
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
-  
-                   
+                       <li>
+            <p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
+            </li>  
+            
                     <!-- user login dropdown start-->
                     <li class="dropdown">
                     <!--
