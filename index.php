@@ -24,7 +24,8 @@
     <link href="public_files/css/style-responsive.css" rel="stylesheet" />
 	<link href="public_files/css/xcharts.min.css" rel=" stylesheet">	
 	<link href="public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
-
+	<title>SYGELYCO</title>
+	<link rel="shortcut icon" href="public_files/img/iconSYGELYCO.png">
   </head>
 
   <body>
