@@ -26,6 +26,7 @@
 	<link href="public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 	<title>SYGELYCO</title>
 	<link rel="shortcut icon" href="public_files/img/iconSYGELYCO.png">
+	<script src="Public_files/js/jquery-1.8.3.min.js"></script>
   </head>
 
   <body>
@@ -131,7 +132,8 @@
           </section>
       </section>
       <!--main content end-->
-  </section>
+  </section>					  
+
   <!-- container section start -->
 
   <?php include("footer_index.php"); ?>

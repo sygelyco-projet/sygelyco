@@ -26,10 +26,10 @@
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
             <li>
-			<select  class="form-control" style="height:25px" name="code" >
-									<option value="Français"></option>
-									<option value="English"></option>
-									<option value="español"></option>
+			<select  class="form-control" style="height:35px" name="lang" id="lang">
+									<option value="fr">Francais</option>
+									<option value="en">english</option>
+									<option value="esp">espanol</option>
             </select>
             <p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
             </li>  
@@ -68,10 +68,12 @@
                                               <p class="login-img">connexion<i class="icon_lock_alt"></i></p>
                                           </div>
                                           <div class="modal-body">
-                                                       <form class="form-inline" name="connexionForm" id="connexionForm" action="views/home.php" method="post">        
+  
+        <form class="form-inline" name="connexionForm" id="connexionForm" action="#" method="post" >        
         <div class="login-wrap">
             <p>		    
-			<span id="erreur"></span><!-- span qui contiendra les éventuels messages d'erreur -->
+			<span id="erreur">
+			</span><!-- span qui contiendra les éventuels messages d'erreur -->
 		    </p>
             <div class="input-group">
               <span class="input-group-addon"><i class="icon_profile"></i></span>
@@ -88,11 +90,40 @@
 			<span class="pull-left"> <a href="#"> Forgot Password?</a></span>
         </div>
       </form>
+		
 
                                           </div>
 
                                       </div>
                                   </div>
                               </div>
+							  
+
+<script type="text/javascript">
+$(document).ready( function () {
+	$("#connexionForm").submit( function() {							 
+		$.ajax({
+		   type: "POST",
+		   url: "controller/login-verification.php",
+		   data: "login="+$("#login").val()+"&pass="+$("#pass").val(),
+		   success: function(msg){
+				//alert(msg);
+				if(msg==1) // si la connexion en php a fonctionnée
+				{
+				window.location="views/home.php";
+				}
+				else // si la connexion en php n'a pas fonctionnée
+				{
+					$("span#erreur").html('<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Erreur lors de la connexion, v&eacute;rifier votre login et votre mot de passe.</div>');
+					// on affiche un message d'erreur dans le span prévu à cet effet
+				}
+		   }
+		});
+		return false;
+	});
+});
+</script>
+							  
+						
 							  
 							  

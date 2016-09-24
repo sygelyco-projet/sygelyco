@@ -18,9 +18,8 @@
                 </ul>
                 <!--  search form end -->                
             </div>
-
-            <div class="top-nav notification-row">                
-                <!-- notificatoin dropdown start-->
+            <div class="top-nav notification-row"> 					
+				<!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
                     
                     <!-- inbox notificatoin start-->
@@ -29,8 +28,11 @@
                             <i class="icon-envelope-l"></i>
                             <span class="badge bg-important">5</span>
                         </a>
+						
                         <ul class="dropdown-menu extended inbox">
-                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <div class="notify-arrow notify-arrow-blue">
+
+							</div>
                             <li>
                                 <p class="blue">1 nouveau(x) message(s)</p>
                             </li>

@@ -1,7 +1,6 @@
  <!-- javascripts -->
     <script src="Public_files/js/jquery.js"></script>
 	<script src="Public_files/js/jquery-ui-1.10.4.min.js"></script>
-    <script src="Public_files/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="Public_files/js/jquery-ui-1.9.2.custom.min.js"></script>
     <!-- bootstrap -->
     <script src="Public_files/js/bootstrap.min.js"></script>
@@ -22,7 +21,6 @@
     <!-- custom select -->
     <script src="Public_files/js/jquery.customSelect.min.js" ></script>
 	<script src="Public_files/assets/chart-master/Chart.js"></script>
-   
     <!--custome script for all page-->
     <script src="Public_files/js/scripts.js"></script>
     <!-- custom script for this page-->
@@ -39,7 +37,6 @@
 	<script src="Public_files/js/charts.js"></script>
 	<script src="Public_files/js/jquery.slimscroll.min.js"></script>
   <script>
-
       //knob
       $(function() {
         $(".knob").knob({
@@ -86,9 +83,7 @@
 
 
 
-  </script>
-
-
+ </script>
  <script src="Public_files/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="Public_files/js/ie10-viewport-bug-workaround.js"></script>
@@ -98,7 +93,6 @@
     <script type="text/javascript" src="Public_files/js/jssor.slider.mini.js"></script>
 
   <script>
-
         jQuery(document).ready(function ($) {
             var options = {
                 $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
@@ -160,4 +154,3 @@
             //responsive code end
         });
     </script>
-	
