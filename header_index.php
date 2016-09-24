@@ -5,7 +5,7 @@
             </div>
 
             <!--logo start-->
-            <a href="#" class="logo">LOGO<span class="lite">LYCEE test domche</span></a>
+            <a href="#" class="logo">LOGO<span class="lite">LYCEE</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
