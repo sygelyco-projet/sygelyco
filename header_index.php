@@ -28,7 +28,7 @@
             <li>
 			<select  class="form-control" style="height:25px" name="code" >
 									<option value="Français"></option>
-									<option value='English"></option>
+									<option value="English"></option>
 									<option value="español"></option>
             </select>
             <p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
