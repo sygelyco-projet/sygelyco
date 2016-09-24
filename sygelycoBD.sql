@@ -27,7 +27,7 @@ CREATE TABLE eleve(
         type_ecole_origine Varchar (25) ,
         redoublant         Varchar (3) ,
         photo              Varchar (255) ,
-        id_classe          Int ,
+         date_creation      DATETIME ,
 		id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id ) ,
         UNIQUE (matricule )
@@ -92,8 +92,8 @@ CREATE TABLE utilisateur(
         tel_user2    Varchar (25) NOT NULL ,
         photo        Varchar (255) NOT NULL ,
         email        Varchar (255) ,
+        date_heure       DATETIME ,
         commentaires Text NOT NULL ,
-        id_privilege Int NOT NULL ,
         PRIMARY KEY (id ) ,
         UNIQUE (login ,password ,email )
 )ENGINE=InnoDB;
@@ -126,6 +126,18 @@ CREATE TABLE privilege(
 
 
 #------------------------------------------------------------
+# Table: privilege_utilisateur
+#------------------------------------------------------------
+
+CREATE TABLE privilege_utilisateur(
+        id             int (11) Auto_increment  NOT NULL ,
+        id_utilisateur   Int NOT NULL ,
+        id_privilege   Int NOT NULL ,
+        id_anne_scolaire   Int NOT NULL ,
+        PRIMARY KEY (id ) 
+)ENGINE=InnoDB;
+
+#------------------------------------------------------------
 # Table: sanction
 #------------------------------------------------------------
 
@@ -147,7 +159,6 @@ CREATE TABLE anne_scolaire(
         id               int (11) Auto_increment  NOT NULL ,
         annee            Varchar (9) NOT NULL ,
         etat             Varchar (25) NOT NULL ,
-        id_etablissement Int ,
 		id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id ) ,
         UNIQUE (annee )
@@ -240,6 +251,7 @@ CREATE TABLE personnel(
         tel_conjoint           Varchar (255)  ,
         profession_conjoint    Varchar (255)  ,
         date_retraite          Date   ,
+        date_creation       DATETIME ,
 		id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id ) ,
         UNIQUE (matricule )
@@ -281,8 +293,8 @@ CREATE TABLE achat_sms(
         id               int (11) Auto_increment  NOT NULL ,
         nbre_sms         Int NOT NULL ,
         cout_unitaire    Int NOT NULL ,
-        date_achat       Date NOT NULL ,
-        id_etablissement Int ,
+        date_achat       DATETIME NOT NULL ,
+        id_anne_scolaire Int ,
 		id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id )
 )ENGINE=InnoDB;
@@ -297,6 +309,7 @@ CREATE TABLE droit_attribue_sur_eleve(
         id_utilisateur Int NOT NULL ,
         id_eleve       Int NOT NULL ,
         id_sequence    Int NOT NULL ,
+        id_anne_scolaire    Int NOT NULL ,
 		date_debut     Date NOT NULL ,
         date_fin       Date NOT NULL ,
         PRIMARY KEY (id_droit_sur_eleve ,id_utilisateur ,id_eleve ,id_sequence )
@@ -312,7 +325,7 @@ CREATE TABLE sanction_attribue(
         id_eleve         Int NOT NULL ,
         id_anne_scolaire Int NOT NULL ,
         id_sequence      Int NOT NULL ,
-        date_attribution Date ,
+        date_attribution DATETIME ,
         id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id_sanction ,id_eleve ,id_anne_scolaire ,id_sequence )
 )ENGINE=InnoDB;
@@ -328,6 +341,7 @@ CREATE TABLE abscence_eleves(
         id_anne_scolaire Int NOT NULL ,
 		nombre           Int ,
         id_utilisateur   Int NOT NULL ,
+         date_heure       DATETIME ,
         PRIMARY KEY (id_sequence ,id_eleve ,id_anne_scolaire  )
 )ENGINE=InnoDB;
 
@@ -343,6 +357,7 @@ CREATE TABLE note(
         id_matiere       Int NOT NULL ,
 		note             Int ,
         id_utilisateur   Int NOT NULL ,
+        date_heure       DATETIME ,
         PRIMARY KEY (id_eleve ,id_sequence ,id_anne_scolaire ,id_matiere )
 )ENGINE=InnoDB;
 
@@ -436,23 +451,24 @@ CREATE TABLE envoyer_message(
         id               Int NOT NULL ,
 		contenu          Varchar (250) ,
         tel_destinataire Varchar (25) NOT NULL ,
-        date_heure       Date NOT NULL ,
+        date_heure       DATETIME NOT NULL ,
         id_utilisateur   Int NOT NULL ,
         id_anne_scolaire Int NOT NULL ,
         PRIMARY KEY (id ,id_utilisateur ,id_anne_scolaire )
 )ENGINE=InnoDB;
 
-ALTER TABLE eleve ADD CONSTRAINT FK_eleve_id_classe FOREIGN KEY (id_classe) REFERENCES classe(id);
 ALTER TABLE classe ADD CONSTRAINT FK_classe_id_cathegorie_classe FOREIGN KEY (id_cathegorie_classe) REFERENCES cathegorie_classe(id);
 ALTER TABLE cathegorie_classe ADD CONSTRAINT FK_cathegorie_classe_id_cycle FOREIGN KEY (id_cycle) REFERENCES cycle(id);
-ALTER TABLE utilisateur ADD CONSTRAINT FK_utilisateur_id_privilege FOREIGN KEY (id_privilege) REFERENCES privilege(id);
-ALTER TABLE anne_scolaire ADD CONSTRAINT FK_anne_scolaire_id_etablissement FOREIGN KEY (id_etablissement) REFERENCES etablissement(id);
+ALTER TABLE privilege_utilisateur ADD CONSTRAINT FK_utilisateur_id_privilege FOREIGN KEY (id_privilege) REFERENCES privilege(id);
+ALTER TABLE privilege_utilisateur ADD CONSTRAINT FK_privilege_id_utilisateur FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id);
+ALTER TABLE privilege_utilisateur ADD CONSTRAINT FK_privilege_utilisateur_anne_scolaire FOREIGN KEY (id_anne_scolaire) REFERENCES anne_scolaire(id);
 ALTER TABLE etablissement ADD CONSTRAINT FK_etablissement_id_anne_scolaire FOREIGN KEY (id_anne_scolaire) REFERENCES anne_scolaire(id);
-ALTER TABLE achat_sms ADD CONSTRAINT FK_achat_sms_id_etablissement FOREIGN KEY (id_etablissement) REFERENCES etablissement(id);
+ALTER TABLE achat_sms ADD CONSTRAINT FK_achat_sms_id_anne_scolaire FOREIGN KEY (id_anne_scolaire) REFERENCES anne_scolaire(id);
 ALTER TABLE droit_attribue_sur_eleve ADD CONSTRAINT FK_droit_attribue_sur_eleve_id FOREIGN KEY (id_droit_sur_eleve) REFERENCES droit_sur_eleve(id);
 ALTER TABLE droit_attribue_sur_eleve ADD CONSTRAINT FK_droit_attribue_sur_eleve_id_utilisateur FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id);
 ALTER TABLE droit_attribue_sur_eleve ADD CONSTRAINT FK_droit_attribue_sur_eleve_id_eleve FOREIGN KEY (id_eleve) REFERENCES eleve(id);
 ALTER TABLE droit_attribue_sur_eleve ADD CONSTRAINT FK_droit_attribue_sur_eleve_id_sequence FOREIGN KEY (id_sequence) REFERENCES sequence(id);
+ALTER TABLE droit_attribue_sur_eleve ADD CONSTRAINT FK_droit_attribue_sur_eleve_id_anne_scolaire FOREIGN KEY (id_anne_scolaire) REFERENCES anne_scolaire(id);
 ALTER TABLE sanction_attribue ADD CONSTRAINT FK_sanction_attribue_id FOREIGN KEY (id_sanction) REFERENCES sanction(id);
 ALTER TABLE sanction_attribue ADD CONSTRAINT FK_sanction_attribue_id_eleve FOREIGN KEY (id_eleve) REFERENCES eleve(id);
 ALTER TABLE sanction_attribue ADD CONSTRAINT FK_sanction_attribue_id_anne_scolaire FOREIGN KEY (id_anne_scolaire) REFERENCES anne_scolaire(id);
