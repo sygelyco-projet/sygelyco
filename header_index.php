@@ -20,14 +20,17 @@
                 <!--  search form end -->                
             </div>
              <span class="school_name">BIENVENUE AU ..................</span>
-
+	
             <div class="top-nav notification-row"> 
-<select  class="form-control" name="code" >
-                                
-                            </select>			
+		
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
-                       <li>
+            <li>
+			<select  class="form-control" style="height:25px" name="code" >
+									<option value="Français"></option>
+									<option value='English"></option>
+									<option value="español"></option>
+            </select>
             <p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
             </li>  
             
