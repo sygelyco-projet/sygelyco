@@ -19,19 +19,65 @@
                 </ul>
                 <!--  search form end -->                
             </div>
-             <span class="school_name">BIENVENUE AU ..................</span>
+             <span class="school_name"><?php echo bienvenue; ?>.</span>
 	
             <div class="top-nav notification-row"> 
 		
                 <!-- notificatoin dropdown start-->
                 <ul class="nav pull-right top-menu">
             <li>
-			<select  class="form-control" style="height:35px" name="lang" id="lang">
-									<option value="fr">Francais</option>
-									<option value="en">english</option>
-									<option value="esp">espanol</option>
-            </select>
-            <p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
+			
+
+               	 <?php
+
+				 if (isset($_GET['lang'])){// on charge la liste deroulante en fonction de la langue choisie
+				 
+					 if ($_GET['lang']=='esp') {
+						?>
+						<select  class="form-control" style="height:35px" name="lang" id="lang">
+										<option value="esp">espanol</option>
+										<option value="fr">Francais</option>
+										<option value="en">english</option>
+						</select>
+						<?php
+					 } 
+					 
+					 else if ($_GET['lang']=='en') {  
+						?>
+						<select  class="form-control" style="height:35px" name="lang" id="lang">
+										<option value="en">english</option>
+										<option value="esp">espanol</option>
+										<option value="fr">Francais</option>
+						</select>
+						<?php
+					 }
+					 else {                       
+						?>
+						<select  class="form-control" style="height:35px" name="lang" id="lang">
+										<option value="fr">Francais</option>
+										<option value="en">english</option>
+										<option value="esp">espanol</option>
+						</select>
+						<?php
+					 }
+				 
+				 }else {                      
+						?>
+						<select  class="form-control" style="height:35px" name="lang" id="lang">
+										<option value="fr">Francais</option>
+										<option value="en">english</option>
+										<option value="esp">espanol</option>
+						</select>
+						<?php
+				 }
+				 
+				?>
+			
+			
+			
+			
+			
+			<p><i class="fa fa-phone-square"></i>+0123 456 70 90</p>
             </li>  
             
                     <!-- user login dropdown start-->
@@ -46,7 +92,7 @@
                         </a>
                         -->
                         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal-2">
-                          Sign In
+                          <?php echo bouton_connection; ?>.
                         </button>
                     </li>
                     <!-- user login dropdown end -->
@@ -65,7 +111,7 @@
                                       <div class="modal-content">
                                           <div class="modal-header">
                                               <button aria-hidden="true" data-dismiss="modal" class="close" type="button">x</button>
-                                              <p class="login-img">connexion<i class="icon_lock_alt"></i></p>
+                                              <p class="login-img"><?php echo titre; ?><i class="icon_lock_alt"></i></p>
                                           </div>
                                           <div class="modal-body">
   
@@ -77,17 +123,17 @@
 		    </p>
             <div class="input-group">
               <span class="input-group-addon"><i class="icon_profile"></i></span>
-              <input type="text" class="form-control" placeholder="Username" name="login" id="login" autofocus required/>
+              <input type="text" class="form-control" placeholder="<?php echo nom_user; ?>" name="login" id="login" autofocus required/>
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                <input type="password" class="form-control" name="pass" id="pass" placeholder="Password" required/>
+                <input type="password" class="form-control" name="pass" id="pass" placeholder="<?php echo passe_user; ?>" required/>
             </div>
             <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
+                <input type="checkbox" value="remember-me"> <?php echo se_rappeler; ?>
             </label>
-            <center><button class="btn btn-primary btn-lg btn-block" style="width: 40%" type="submit">Login</button></center>
-			<span class="pull-left"> <a href="#"> Forgot Password?</a></span>
+            <center><button class="btn btn-primary btn-lg btn-block" style="width: 40%" type="submit"><?php echo titre; ?></button></center>
+			<span class="pull-left"> <a href="#"> <?php echo passe_oublie; ?></a></span>
         </div>
       </form>
 		
@@ -120,6 +166,16 @@ $(document).ready( function () {
 		   }
 		});
 		return false;
+	});
+		$("#lang").on('change', function() {
+		var lang = $(this).val(); // on récupère la lang
+		$.ajax({
+		   url: "lang/decide-lang.php",
+		   data: "lang="+lang,
+		   success: function(msg){
+				window.location='index.php?lang='+lang;
+		   }
+		});
 	});
 });
 </script>

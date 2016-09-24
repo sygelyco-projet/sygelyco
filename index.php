@@ -32,9 +32,8 @@
   <body>
   <!-- container section start -->
   <section id="container" class="">
+		<?php include("lang/decide-lang.php"); ?>
 		<?php include("header_index.php"); ?>
-      
-
        <?php include("menu_index.php"); ?>
       
       <!--main content start-->
@@ -97,7 +96,7 @@
 						<div class="count"><span class="profile-ava">
                                 <img alt="" src="Public_files/img/avatar1_small.jpg">
                             </span></div>
-						<div class="title">A propos du lycee</div>						
+						<div class="title"><?php echo a_propos_lycee; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
@@ -107,7 +106,7 @@
 						<div class="count"><span class="profile-ava">
                                 <img alt="" src="Public_files/img/avatar1_small.jpg">
                             </span></div>
-						<div class="title">A propos du proviseur</div>						
+						<div class="title"><?php echo a_propos_proviseur; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->	
 				
@@ -115,7 +114,7 @@
 					<div class="info-box dark-bg">
 						<i class="fa fa-thumbs-o-up"></i>
 						<div class="count">80%</div>
-						<div class="title">de reuissite</div>						
+						<div class="title"><?php echo taux_reussite; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
@@ -123,7 +122,7 @@
 					<div class="info-box green-bg">
 						<i class="fa fa-cubes"></i>
 						<div class="count">1.426</div>
-						<div class="title">Stock</div>						
+						<div class="title"><?php echo moyenne_generale; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
