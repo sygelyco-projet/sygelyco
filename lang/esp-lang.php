@@ -31,5 +31,18 @@
 	 define('a_propos_proviseur', 'Sobre el director');
 	 define('taux_reussite', 'exito');
 	 define('moyenne_generale', 'media general');
+	 
+//Home.php
+	//--header
+	define('mon_profile', 'Mi perfil');
+	define('mes_messages', 'mis mensajes');
+	define('chats', 'charlar');
+	define('aide', 'ayudar');
+	define('deconnexion', 'finalizar la sesion');
+	
+	 //-- content
+	 define('tableau_de_bord', 'SALPICADERO');
+	 define('actualites', 'Noticias');
+	 define('calandrier', 'Calendario');
 
 ?>
