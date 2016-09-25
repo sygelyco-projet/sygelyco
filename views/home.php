@@ -74,7 +74,7 @@ echo '<script>window.location.href ="'.$url.'";</script>';
 					<div class="info-box blue-bg">
 						<i class="fa fa-cloud-download"></i>
 						<div class="count"><span class="profile-ava">
-                                <img alt="" src="Public_files/img/avatar1_small.jpg">
+                                <img alt="" src="../Public_files/img/avatar1_small.jpg">
                             </span></div>
 						<div class="title"><?php echo a_propos_lycee; ?></div>						
 					</div><!--/.info-box-->			
@@ -84,7 +84,7 @@ echo '<script>window.location.href ="'.$url.'";</script>';
 					<div class="info-box brown-bg">
 						<i class="fa fa-shopping-cart"></i>
 						<div class="count"><span class="profile-ava">
-                                <img alt="" src="Public_files/img/avatar1_small.jpg">
+                                <img alt="" src="../Public_files/img/avatar1_small.jpg">
                             </span></div>
 						<div class="title"><?php echo a_propos_proviseur; ?></div>						
 					</div><!--/.info-box-->			
