@@ -94,11 +94,7 @@
                                 <a href="#"><i class="icon_key_alt"></i> <?php echo aide; ?></a>
                             </li>
 							<li>
-<<<<<<< HEAD
-                                <a href="../controller/logout.php"><i class="icon_key_alt"></i> Log Out</a>
-=======
-                                <a href="../index.php?lang=<?php echo $_GET['lang']; ?>"><i class="icon_key_alt"></i><?php echo deconnexion; ?></a>
->>>>>>> 754b05acc79bb42065c724d26ab21fd5e11f6a03
+                                <a href="../controller/logout.php?lang=<?php echo $_GET['lang']; ?>"><i class="icon_key_alt"></i><?php echo deconnexion; ?></a>
                             </li>
                             
                         </ul>

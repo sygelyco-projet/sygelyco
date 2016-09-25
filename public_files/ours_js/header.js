@@ -12,12 +12,8 @@ $(document).ready( function () {
     //alert(msg);
     if(msg==1) // si la connexion en php a fonctionnée
     {
-<<<<<<< HEAD
     	//console.log(msg);
-    window.location="views/home.php";
-=======
     window.location="views/home.php?lang="+lang;
->>>>>>> 754b05acc79bb42065c724d26ab21fd5e11f6a03
     }
     else // si la connexion en php n'a pas fonctionnée
     {
