@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-   
+ 
       <header class="header dark-bg">
-=======
  <link href="../Public_files/css/myheadcss.css" rel="stylesheet">
   <header class="header dark-bg">
->>>>>>> 754b05acc79bb42065c724d26ab21fd5e11f6a03
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
