@@ -6,7 +6,7 @@ if (session_id() == "")
 $_SESSION = array();
 session_destroy();
 //var_dump($home_path);
-$url=$home_path.'/index.php';
+$url=$home_path.'/index.php?lang='.$_GET['lang']; 
 echo '<script>window.location.href ="'.$url.'";</script>';
 
     // exit();
