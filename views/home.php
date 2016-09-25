@@ -50,7 +50,7 @@ $url=$home_path.'/index.php?lang='.$_GET['lang'];
 
   <!-- container section start -->
   <section id="container" class="">
-   <?php include("../lang/decide-lang.php"); ?>
+   <?php include("../lang/decide-lang.php"); if(!isset($_GET['lang']))  $_GET['lang']='fr'; ?>
      <?php include("header.php"); ?>
 	 <?php include("menu.php"); // charge dynamiquement en fonction des droits    ?>
 
