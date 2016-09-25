@@ -29,50 +29,45 @@
             <li>
 			
 
+				<select  class="form-control" style="height:35px" name="lang_index" id="lang_index">
                	 <?php
 
 				 if (isset($_GET['lang'])){// on charge la liste deroulante en fonction de la langue choisie
 				 
 					 if ($_GET['lang']=='esp') {
 						?>
-						<select  class="form-control" style="height:35px" name="lang" id="lang">
 										<option value="esp">espanol</option>
 										<option value="fr">Francais</option>
 										<option value="en">english</option>
-						</select>
 						<?php
 					 } 
 					 
 					 else if ($_GET['lang']=='en') {  
 						?>
-						<select  class="form-control" style="height:35px" name="lang" id="lang">
 										<option value="en">english</option>
 										<option value="esp">espanol</option>
 										<option value="fr">Francais</option>
-						</select>
 						<?php
 					 }
 					 else {                       
 						?>
-						<select  class="form-control" style="height:35px" name="lang" id="lang">
 										<option value="fr">Francais</option>
 										<option value="en">english</option>
 										<option value="esp">espanol</option>
-						</select>
 						<?php
 					 }
 				 
 				 }else {                      
 						?>
-						<select  class="form-control" style="height:35px" name="lang" id="lang">
 										<option value="fr">Francais</option>
 										<option value="en">english</option>
 										<option value="esp">espanol</option>
-						</select>
 						<?php
 				 }
 				 
 				?>
+			
+			</select>
 			
 			
 			

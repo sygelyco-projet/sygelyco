@@ -3,10 +3,11 @@
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
-                  <li class="active">
+				</br>
+				 <li class="active">
                       <a class="" href="../public_files/index.html">
                           <i class="icon_house_alt"></i>
-                          <span>Accueil</span>
+                          <span><?php echo menu1; ?></span>
                       </a>
                   </li>
 				  <li class="sub-menu">

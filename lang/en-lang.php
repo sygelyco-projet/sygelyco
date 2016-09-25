@@ -31,5 +31,18 @@
 	 define('a_propos_proviseur', 'About the headmaster');
 	 define('taux_reussite', 'of success');
 	 define('moyenne_generale', 'overall average');
+	 
+//Home.php
+	//--header
+	define('mon_profile', 'My profile');
+	define('mes_messages', 'My messages');
+	define('chats', 'Chat');
+	define('aide', 'Help');
+	define('deconnexion', 'Log out');
+	
+	 //-- content
+	 define('tableau_de_bord', 'DASHBOARD');
+	 define('actualites', 'News');
+	 define('calandrier', 'Calendar');
 
 ?>

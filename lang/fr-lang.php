@@ -7,7 +7,7 @@
 	
 	//--login form
 	define('titre', 'Connexion');
-	define('erreur', 'Erreur lors de la connexion, vérifiez votre login et votre mot de passe.');
+	define('erreur', 'Erreur lors de la connexion, v&eacute;rifier votre login et votre mot de passe.');
 	define('nom_user', 'Nom utilisateur');
 	define('passe_user', 'Mot de passe');
 	define('se_rappeler', 'Se rappeler de moi');
@@ -33,5 +33,16 @@
 	 define('moyenne_generale', 'moyenne générale');
 
 //Home.php
+	//--header
+	define('mon_profile', 'Mon profil');
+	define('mes_messages', 'Mes messages');
+	define('chats', 'Bavarder');
+	define('aide', 'Aide');
+	define('deconnexion', 'Deconnexion');
+	
+	 //-- content
+	 define('tableau_de_bord', 'TABLEAU DE BORD');
+	 define('actualites', 'Actualités');
+	 define('calandrier', 'Calandrier');
 
 ?>

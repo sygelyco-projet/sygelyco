@@ -39,6 +39,7 @@
   <body>
   <!-- container section start -->
   <section id="container" class="">
+   <?php include("../lang/decide-lang.php"); ?>
      <?php include("header.php"); ?>
 	 <?php include("menu.php"); // charge dynamiquement en fonction des droits    ?>
 
@@ -49,10 +50,10 @@
               <!--overview start-->
 			  <div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-laptop"></i> TABLEAU DE BORD</h3>
+					<h3 class="page-header"><i class="fa fa-laptop"></i> <?php echo tableau_de_bord; ?></h3>
 					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="home.php">Home</a></li>
-						<li><i class="fa fa-laptop"></i>Accueil</li>						  	
+						<li><i class="fa fa-home"></i><a href="home.php"><?php echo menu1; ?></a></li>
+						<li><i class="fa fa-laptop"></i><?php echo tableau_de_bord; ?></li>						  	
 					</ol>
 				</div>
 			</div>
@@ -64,7 +65,7 @@
 						<div class="count"><span class="profile-ava">
                                 <img alt="" src="Public_files/img/avatar1_small.jpg">
                             </span></div>
-						<div class="title">A propos du lycee</div>						
+						<div class="title"><?php echo a_propos_lycee; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
@@ -74,7 +75,7 @@
 						<div class="count"><span class="profile-ava">
                                 <img alt="" src="Public_files/img/avatar1_small.jpg">
                             </span></div>
-						<div class="title">A propos du proviseur</div>						
+						<div class="title"><?php echo a_propos_proviseur; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->	
 				
@@ -82,7 +83,7 @@
 					<div class="info-box dark-bg">
 						<i class="fa fa-thumbs-o-up"></i>
 						<div class="count">80%</div>
-						<div class="title">de reuissite</div>						
+						<div class="title"><?php echo taux_reussite; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
@@ -90,7 +91,7 @@
 					<div class="info-box green-bg">
 						<i class="fa fa-cubes"></i>
 						<div class="count">1.426</div>
-						<div class="title">Stock</div>						
+						<div class="title"><?php echo moyenne_generale; ?></div>						
 					</div><!--/.info-box-->			
 				</div><!--/.col-->
 				
@@ -102,7 +103,7 @@
 			<div class="col-md-6 portlets">
             <div class="panel panel-default">
 				<div class="panel-heading">
-                  <h2><strong>Calendar</strong></h2>
+                  <h2><strong><?php echo calandrier; ?></strong></h2>
 				<div class="panel-actions">
                     <a href="../public_files/#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
                     <a href="../public_files/#" class="wclose"><i class="fa fa-times"></i></a>
@@ -123,7 +124,7 @@
 				 <div class="col-md-6 portlets">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <div class="pull-left">Actualités</div>
+                  <div class="pull-left"><?php echo actualites; ?></div>
                   <div class="widget-icons pull-right">
                     <a href="../public_files/#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
                     <a href="../public_files/#" class="wclose"><i class="fa fa-times"></i></a>
@@ -152,7 +153,7 @@
   </section>
   <!-- container section start -->
   
-    <?php include("footer.php"); ?>
+    <?php include("../footer_index.php"); ?>
 
     <!-- javascripts -->
     <script src="../public_files/js/jquery.js"></script>
