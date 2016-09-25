@@ -1,5 +1,4 @@
  <link href="../Public_files/css/myheadcss.css" rel="stylesheet">
- <script src="../Public_files/ours_js/header.js"></script>  
   <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
@@ -101,3 +100,19 @@
             </div>
       </header>      
       <!--header end-->
+	  
+	<script >  
+	  $(document).ready( function () {
+
+  $("#lang_home").on('change', function() {
+   var lang = $(this).val(); // on récupère la lang
+  $.ajax({
+     data: "lang="+lang,
+     success: function(msg){
+    window.location='home.php?lang='+lang;
+     }
+  });
+ });
+ 
+});
+</script>

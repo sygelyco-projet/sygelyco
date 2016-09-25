@@ -34,16 +34,7 @@ $(document).ready( function () {
   });
  });
  
-   $("#lang_home").on('change', function() {
-  var lang = $(this).val(); // on récupère la lang
-  $.ajax({
-     url: "lang/decide-lang.php",
-     data: "lang="+lang,
-     success: function(msg){
-    window.location='home.php?lang='+lang;
-     }
-  });
- });
+
  
 });
 

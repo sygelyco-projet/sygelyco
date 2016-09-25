@@ -94,6 +94,7 @@ CREATE TABLE utilisateur(
         email        Varchar (255) ,
         date_heure       DATETIME ,
         commentaires Text NOT NULL ,
+		code_passe_oublie VARCHAR(10) NOT NULL,
         PRIMARY KEY (id ) ,
         UNIQUE (login ,password ,email )
 )ENGINE=InnoDB;

@@ -33,7 +33,7 @@
     <link href="../public_files/css/style-responsive.css" rel="stylesheet" />
 	<link href="../public_files/css/xcharts.min.css" rel=" stylesheet">	
 	<link href="../public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
-
+		<script src="../Public_files/js/jquery-1.8.3.min.js"></script>
   </head>
 
   <body>
@@ -52,7 +52,7 @@
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-laptop"></i> <?php echo tableau_de_bord; ?></h3>
 					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="home.php"><?php echo menu1; ?></a></li>
+						<li><i class="fa fa-home"></i><a href="home.php?lang=<?php echo $_GET['lang']; ?>"><?php echo menu1; ?></a></li>
 						<li><i class="fa fa-laptop"></i><?php echo tableau_de_bord; ?></li>						  	
 					</ol>
 				</div>
@@ -105,8 +105,8 @@
 				<div class="panel-heading">
                   <h2><strong><?php echo calandrier; ?></strong></h2>
 				<div class="panel-actions">
-                    <a href="../public_files/#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
-                    <a href="../public_files/#" class="wclose"><i class="fa fa-times"></i></a>
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
                 </div>  
                  
                 </div><br><br><br>
@@ -126,8 +126,8 @@
                 <div class="panel-heading">
                   <div class="pull-left"><?php echo actualites; ?></div>
                   <div class="widget-icons pull-right">
-                    <a href="../public_files/#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
-                    <a href="../public_files/#" class="wclose"><i class="fa fa-times"></i></a>
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
                   </div>  
                   <div class="clearfix"></div>
                 </div>
