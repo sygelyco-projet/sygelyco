@@ -3,8 +3,8 @@
  require '../controller/session.php';
   if (!isset($_SESSION['user']))
 {
-   $url=$home_path.'/index.php';
-echo '<script>window.location.href ="'.$url.'";</script>';
+$url=$home_path.'/index.php?lang='.$_GET['lang']; 
+//echo '<script>window.location.href ="'.$url.'";</script>';
   
 }
   ?>
