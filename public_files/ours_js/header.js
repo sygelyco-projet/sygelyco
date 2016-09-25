@@ -12,7 +12,7 @@ $(document).ready( function () {
     }
     else // si la connexion en php n'a pas fonctionnée
     {
-     $("span#erreur").html('<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Erreur lors de la connexion, v&eacute;rifier votre login et votre mot de passe.</div>');
+     $("span#erreur").load("div_erreur.php");
      // on affiche un message d'erreur dans le span prévu à cet effet
     }
      }
