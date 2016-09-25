@@ -1,5 +1,4 @@
 <?php
-define("ENCRYPTION_KEY", "!@#$%^Soheil&*_DAK_dak");
 	require '../connexionBD/connexionBD.php';
 	require '../models/connexioninfo.php';
 	/*$req = $db->prepare('INSERT INTO utilisateur(login, password) VALUES(:login, :password)');
