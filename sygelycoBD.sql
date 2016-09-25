@@ -96,7 +96,7 @@ CREATE TABLE utilisateur(
         commentaires Text NOT NULL ,
 		code_passe_oublie VARCHAR(10) NOT NULL,
         PRIMARY KEY (id ) ,
-        UNIQUE (login ,password ,email )
+        UNIQUE (login ,password ,email,code_passe_oublie  )
 )ENGINE=InnoDB;
 
 
