@@ -1,12 +1,22 @@
 <?php
-
-	if(($_POST['login']=="test")&&($_POST['pass']=="test"))
-	{
-		//on charge la variable session
-		echo "1"; // on 'retourne' la valeur 1 au javascript si la connexion est bonne 
-	}
-	else 
-	{
-		echo "0"; // on 'retourne' la valeur 0 au javascript si la connexion n'est pas bonne
-	}
+define("ENCRYPTION_KEY", "!@#$%^Soheil&*_DAK_dak");
+	require '../connexionBD/connexionBD.php';
+	require '../models/connexioninfo.php';
+	/*$req = $db->prepare('INSERT INTO utilisateur(login, password) VALUES(:login, :password)');
+$req->execute(array(
+	'login' => "admin",
+	'password' => encrypt($_POST['pass'])
+	));*/
+		$retour=get_user_info($_POST['login'],encrypt($_POST['pass']));
+		
+		if(!empty($retour)){
+	  /*foreach($retour as  $rep)
+{
+	echo $rep['id'];
+	
+}*/
+echo "1";
+}else{
+	echo "0";
+}
 ?>

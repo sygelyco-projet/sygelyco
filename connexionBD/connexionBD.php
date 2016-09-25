@@ -4,7 +4,7 @@ try
 	global $PDO;
 	global $db;
 	global $base_de_donnee;
-$db = new PDO('mysql:host=127.0.0.1;dbname=sygelyco', 'root', '');
+$db = new PDO('mysql:host=127.0.0.1;dbname=sygelyco;charset=utf8', 'root', '');
 
 $base_de_donnee = "sygelyco" ;
 }
@@ -18,18 +18,14 @@ catch (Exception $e)
 // Sources www.stackoverflow.com
 //pour cripter et decripter les clés
 
-function encrypt($pure_string, $encryption_key) {
-    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);
-    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-    $encrypted_string = mcrypt_encrypt(MCRYPT_BLOWFISH, $encryption_key, utf8_encode($pure_string), MCRYPT_MODE_ECB, $iv);
-    return $encrypted_string;
+
+function encrypt($mdp)
+{
+    $ch1 = 'b54sFmjJ52';
+    $ch2 = 'DAK_dak';
+    $mdp = md5(sha1($ch1) . sha1($mdp) . sha1($ch2));
+ 
+    return($mdp);
 }
 
-
-function decrypt($encrypted_string, $encryption_key) {
-    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);
-    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-    $decrypted_string = mcrypt_decrypt(MCRYPT_BLOWFISH, $encryption_key, $encrypted_string, MCRYPT_MODE_ECB, $iv);
-    return $decrypted_string;
-}
 ?>
