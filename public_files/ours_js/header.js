@@ -1,3 +1,4 @@
+<script type="text/javascript">
 $(document).ready( function () {
 	$("#connexionForm").submit( function() {							 
 		$.ajax({
@@ -19,4 +20,15 @@ $(document).ready( function () {
 		});
 		return false;
 	});
+		$("#lang").on('change', function() {
+		var lang = $(this).val(); // on récupère la lang
+		$.ajax({
+		   url: "lang/decide-lang.php",
+		   data: "lang="+lang,
+		   success: function(msg){
+				window.location='index.php?lang='+lang;
+		   }
+		});
+	});
 });
+</script>
