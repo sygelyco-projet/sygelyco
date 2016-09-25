@@ -1,6 +1,9 @@
 <?php
+if (session_id() == "") 
+    session_start(); 
 	require '../connexionBD/connexionBD.php';
 	require '../models/connexioninfo.php';
+	
 	/*$req = $db->prepare('INSERT INTO utilisateur(login, password) VALUES(:login, :password)');
 $req->execute(array(
 	'login' => "admin",
@@ -9,11 +12,12 @@ $req->execute(array(
 		$retour=get_user_info($_POST['login'],encrypt($_POST['pass']));
 		
 		if(!empty($retour)){
-	  /*foreach($retour as  $rep)
+	  foreach($retour as  $rep)
 {
-	echo $rep['id'];
+	 $_SESSION['user'] = $rep;
 	
-}*/
+}
+  // $_SESSION['id_anne_scolaire'];
 echo "1";
 }else{
 	echo "0";

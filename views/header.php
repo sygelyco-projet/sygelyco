@@ -1,3 +1,4 @@
+   
       <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
@@ -86,7 +87,7 @@
                             <span class="profile-ava">
                                 <img alt="" src="../public_files/img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Nom admin</span>
+                            <span class="username"><?php echo $_SESSION['user']['login']?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -104,7 +105,7 @@
                                 <a href="#"><i class="icon_key_alt"></i> Aide</a>
                             </li>
 							<li>
-                                <a href="../index.php"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="../controller/logout.php"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             
                         </ul>

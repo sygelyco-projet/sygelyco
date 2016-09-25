@@ -1,3 +1,13 @@
+  <?php 
+  require 'connexionBD/connexionBD.php';
+  require 'controller/session.php';
+    if (isset($_SESSION['user']))
+{
+
+  $url=$home_path.'/views/home.php';
+echo '<script>window.location.href ="'.$url.'";</script>';
+}
+  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +38,6 @@
 	<link rel="shortcut icon" href="public_files/img/iconSYGELYCO.png">
 	<script src="Public_files/js/jquery-1.8.3.min.js"></script>
   </head>
-
   <body>
   <!-- container section start -->
   <section id="container" class="">

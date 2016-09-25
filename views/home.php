@@ -1,3 +1,13 @@
+ <?php
+ require '../connexionBD/connexionBD.php';
+ require '../controller/session.php';
+  if (!isset($_SESSION['user']))
+{
+   $url=$home_path.'/index.php';
+echo '<script>window.location.href ="'.$url.'";</script>';
+  
+}
+  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,6 +47,7 @@
   </head>
 
   <body>
+
   <!-- container section start -->
   <section id="container" class="">
      <?php include("header.php"); ?>
