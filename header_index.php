@@ -13,7 +13,7 @@
                 <ul class="nav top-menu">                    
                     <li>
                         <form class="navbar-form">
-                            <input class="form-control" placeholder="rechercher" type="text">
+                            <input class="form-control" placeholder="<?php echo rechercher; ?>" type="text">
                         </form>
                     </li>                    
                 </ul>

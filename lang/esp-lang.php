@@ -3,6 +3,7 @@
 	//--header
 	define('bienvenue', 'PARA DAR LA BIENVENIDA ..................');
 	define('bouton_connection', 'Iniciar');
+	define('rechercher', 'busqueda');
 	
 	//--login form
 	define('titre', 'Iniciar');
