@@ -1,3 +1,13 @@
+ <?php
+ require '../connexionBD/connexionBD.php';
+ require '../controller/session.php';
+  if (!isset($_SESSION['user']))
+{
+if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
+$url='../index.php?lang='.$_GET['lang']; 
+header('Refresh:0;'.$url.'');
+}
+  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,6 +48,7 @@
   </head>
 
   <body>
+<<<<<<< HEAD
   <!-- container section start -->
   <section id="container" class="">
    <?php include("../lang/decide-lang.php"); ?>
@@ -319,14 +330,24 @@ Ce module vous permet entre autre de :
                 </div>
             </div>
               <!-- project team & activity end -->
+=======
+>>>>>>> 80109454e7de49f2f911e2f7e2ee9c5e1b3eed2f
 
-          </section>
-      </section>
-      <!--main content end-->
-  </section>
   <!-- container section start -->
+  <section id="container" class="">
   
-    <?php include("../footer_index.php"); ?>
+   <?php 
+   if (isset($_SESSION['user'])) {
+   include("../lang/decide-lang.php"); if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
+   include("header.php"); 
+   include("menu.php"); // charge dynamiquement en fonction des droits   
+   include("content_home.php"); // charge dynamiquement en fonction des droits   
+	}
+   ?>
+  
+  </section>
+   <!-- container section start -->  
+   <?php  if (isset($_SESSION['user'])) include("../footer_index.php"); ?>
 
     <!-- javascripts -->
     <script src="../public_files/js/jquery.js"></script>

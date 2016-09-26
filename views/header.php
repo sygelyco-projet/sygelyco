@@ -1,3 +1,4 @@
+
  <link href="../Public_files/css/myheadcss.css" rel="stylesheet">
   <header class="header dark-bg">
             <div class="toggle-nav">
@@ -71,7 +72,7 @@
                             <span class="profile-ava">
                                 <img alt="" src="../public_files/img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Nom admin</span>
+                            <span class="username"><?php echo $_SESSION['user']['login']?></span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
@@ -89,7 +90,7 @@
                                 <a href="#"><i class="icon_key_alt"></i> <?php echo aide; ?></a>
                             </li>
 							<li>
-                                <a href="../index.php?lang=<?php echo $_GET['lang']; ?>"><i class="icon_key_alt"></i><?php echo deconnexion; ?></a>
+                                <a href="../controller/logout.php?lang=<?php echo $_GET['lang']; ?>"><i class="icon_key_alt"></i><?php echo deconnexion; ?></a>
                             </li>
                             
                         </ul>

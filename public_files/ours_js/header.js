@@ -12,6 +12,7 @@ $(document).ready( function () {
     //alert(msg);
     if(msg==1) // si la connexion en php a fonctionnée
     {
+    	//console.log(msg);
     window.location="views/home.php?lang="+lang;
     }
     else // si la connexion en php n'a pas fonctionnée
@@ -33,6 +34,7 @@ $(document).ready( function () {
      }
   });
  });
+ 
  
 
  
