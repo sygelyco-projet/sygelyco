@@ -64,8 +64,18 @@ header('Refresh:0;'.$url.'');
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-laptop"></i> <?php echo tableau_de_bord; ?></h3>
 					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="home.php?lang=<?php echo $_GET['lang']; ?>"><?php echo menu1; ?></a></li>
-						<li><i class="fa fa-laptop"></i><?php echo tableau_de_bord; ?></li>						  	
+						<li><i class="fa fa-home"></i><a href="home.php?lang=<?php echo $_GET['lang']; ?>">
+						<?php echo menu1; ?></a></li>
+						<li><i class="fa fa-laptop"></i>
+				<?php
+				if(isset($_GET['menu'])){
+					if ($_GET['menu']=='help') echo aide;
+					if ($_GET['menu']=='enregistrement_eleve') echo module1_enregistrement.'>'.eleve;
+				
+				}else {echo tableau_de_bord; }
+				?>					
+						
+						</li>						  	
 					</ol>
 				</div>
 			</div>

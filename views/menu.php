@@ -5,7 +5,7 @@
               <ul class="sidebar-menu">                
 				</br>
 				 <li class="active">
-                      <a class="" href="../public_files/index.html">
+                      <a class="" href="home.php?lang=<?php echo $_GET['lang']; ?>">
                           <i class="icon_house_alt"></i>
                           <span><?php echo menu1; ?></span>
                       </a>
