@@ -44,5 +44,12 @@
 	 define('tableau_de_bord', 'DASHBOARD');
 	 define('actualites', 'News');
 	 define('calandrier', 'Calendar');
+	 define('module1_enregistrement', 'Recordings');
+	 define('eleve', 'Student');
+	 define('citation1', 'Originality is nothing that a sensible imagination.');
+	 define('citation2', 'The two secrets of success: Quality and Creativity.');
+	 define('citation3', 'Creativity is piercing the mundane to find the marvelous.');
+	 define('citation4', 'Create your establishments and let us scan it with unparalleled creativity.');
+	 define('citation5', 'Design may realize it is even better.');
 
 ?>

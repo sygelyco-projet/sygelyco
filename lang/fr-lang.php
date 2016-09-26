@@ -44,5 +44,12 @@
 	 define('tableau_de_bord', 'TABLEAU DE BORD');
 	 define('actualites', 'Actualités');
 	 define('calandrier', 'Calandrier');
+	 define('module1_enregistrement', 'Enregistrements');
+	 define('eleve', 'Eleve');
+	 define('citation1', 'L originalité n est rien qu une judicieuse imagination.');
+	 define('citation2', 'Les deux secrets d un succès : la Qualité et la Creativité.');
+	 define('citation3', 'La créativité c’est percer le banal pour trouver le merveilleux.');
+	 define('citation4', 'Créer vos établissements et laisser nous le numériser avec une créativité sans pareil.');
+	 define('citation5', 'Concevoir c’est bien mai réaliser c’est encore mieux.');
 
 ?>

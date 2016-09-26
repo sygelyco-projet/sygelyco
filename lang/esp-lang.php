@@ -44,5 +44,12 @@
 	 define('tableau_de_bord', 'SALPICADERO');
 	 define('actualites', 'Noticias');
 	 define('calandrier', 'Calendario');
+	 define('module1_enregistrement', 'grabaciones');
+	 define('eleve', 'alto');
+	 define('citation1', 'La originalidad es nada que una imaginacion sensible.');
+	 define('citation2', 'Los dos secretos del éxito: calidad y creatividad.');
+	 define('citation3', 'La creatividad es la perforacion de lo mundano para encontrar lo maravilloso.');
+	 define('citation4', 'Crear sus establecimientos y vamos a analizarlo con la creatividad sin igual.');
+	 define('citation5', 'Diseño puede darse cuenta de que es incluso mejor.');
 
 ?>

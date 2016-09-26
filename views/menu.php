@@ -13,15 +13,14 @@
 				  <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_document_alt"></i>
-                          <span>Module1</span>
+                          <span><?php echo module1_enregistrement; ?></span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="../public_files/form_component.html">Sous module1</a></li>                          
-                          <li><a class="" href="../public_files/form_validation.html">sous module1</a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_eleve"><?php echo eleve; ?></a></li>
                       </ul>
                   </li>       
-                  <li class="sub-menu">
+                <!--  <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_desktop"></i>
                           <span>Module2</span>
@@ -69,7 +68,7 @@
                           <li><a class="" href="#">sous Module6</a></li>
                           <li><a class="" href="#">sous Module6</a></li>
                       </ul>
-                  </li>
+                  </li> -->
                   
               </ul>
               <!-- sidebar menu end-->

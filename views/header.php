@@ -87,7 +87,7 @@
                                 <a href="#"><i class="icon_chat_alt"></i> <?php echo chats; ?></a>
                             </li>
                             <li>
-                                <a href="#"><i class="icon_key_alt"></i> <?php echo aide; ?></a>
+                                <a href="home.php?lang=<?php echo $_GET['lang'];?>&menu=help"><i class="icon_key_alt"></i> <?php echo aide; ?></a>
                             </li>
 							<li>
                                 <a href="../controller/logout.php?lang=<?php echo $_GET['lang']; ?>"><i class="icon_key_alt"></i><?php echo deconnexion; ?></a>
