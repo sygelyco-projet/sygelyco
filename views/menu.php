@@ -44,6 +44,20 @@
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=planifications_matieres_classe"><?php echo planifications_matieres_classe; ?></a></li>
                       </ul>
                   </li>   
+				 
+				 
+				 <li class="sub-menu">
+                      <a href="#" class="">
+                          <i class="icon_pens"></i>
+                          <span><?php echo module3_gestion_eleve; ?></span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=gestion_eleve_notes"><?php echo gestion_eleve_notes; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=gestion_eleve_abscences"><?php echo gestion_eleve_abscences; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=gestion_eleve_sancions"><?php echo gestion_eleve_sancions; ?></a></li>
+                      </ul>
+                  </li>   
                 <!--  <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_desktop"></i>

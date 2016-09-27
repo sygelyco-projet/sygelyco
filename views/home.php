@@ -85,6 +85,9 @@ header('Refresh:0;'.$url.'');
 					else if ($_GET['menu']=='planifications_enseignement') echo module2_enregistrement.'>'.planifications_enseignement;
 					else if ($_GET['menu']=='planifications_matieres_personnel') echo module2_enregistrement.'>'.planifications_matieres_personnel;
 					else if ($_GET['menu']=='planifications_matieres_classe') echo module2_enregistrement.'>'.planifications_matieres_classe;
+					else if ($_GET['menu']=='gestion_eleve_notes') echo module3_gestion_eleve.'>'.gestion_eleve_notes;
+					else if ($_GET['menu']=='gestion_eleve_abscences') echo module3_gestion_eleve.'>'.gestion_eleve_abscences;
+					else if ($_GET['menu']=='gestion_eleve_sancions') echo module3_gestion_eleve.'>'.gestion_eleve_sancions;
 				
 				}else {echo tableau_de_bord; }
 				?>					
@@ -112,6 +115,9 @@ header('Refresh:0;'.$url.'');
 					else if ($_GET['menu']=='planifications_enseignement') include("planifications/planifications_enseignement.php");
 					else if ($_GET['menu']=='planifications_matieres_personnel') include("planifications/planifications_matieres_personnel.php");
 					else if ($_GET['menu']=='planifications_matieres_classe') include("planifications/planifications_matieres_classe.php");
+					else if ($_GET['menu']=='gestion_eleve_notes') include("gestion_eleve/gestion_eleve_notes.php");
+					else if ($_GET['menu']=='gestion_eleve_abscences') include("gestion_eleve/gestion_eleve_abscences.php");
+					else if ($_GET['menu']=='gestion_eleve_sancions') include("gestion_eleve/gestion_eleve_sancions.php");
 				
 				}else {include("home_content.php"); }
 				?>

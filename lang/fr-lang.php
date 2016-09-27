@@ -61,6 +61,10 @@
 	 define('planifications_enseignement', 'enseignement');
 	 define('planifications_matieres_personnel', 'matieres des personnels');
 	 define('planifications_matieres_classe', 'matieres par classe');
+	 define('module3_gestion_eleve', 'Eleves');
+	 define('gestion_eleve_notes', 'notes');
+	 define('gestion_eleve_abscences', 'abscences');
+	 define('gestion_eleve_sancions', 'sanctions');
 	 define('citation1', 'L originalité n est rien qu une judicieuse imagination.');
 	 define('citation2', 'Les deux secrets d un succès : la Qualité et la Creativité.');
 	 define('citation3', 'La créativité c’est percer le banal pour trouver le merveilleux.');

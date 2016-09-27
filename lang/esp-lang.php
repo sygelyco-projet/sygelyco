@@ -61,6 +61,10 @@
 	 define('planifications_enseignement', 'ensenando');
 	 define('planifications_matieres_personnel', 'materias personales');
 	 define('planifications_matieres_classe', 'materias por clase');
+	 define('module3_gestion_eleve', 'Estudiantes');
+	 define('gestion_eleve_notes', 'notas');
+	 define('gestion_eleve_abscences', 'ausencias');
+	 define('gestion_eleve_sancions', 'sanciones');
 	 define('citation1', 'La originalidad es nada que una imaginacion sensible.');
 	 define('citation2', 'Los dos secretos del éxito: calidad y creatividad.');
 	 define('citation3', 'La creatividad es la perforacion de lo mundano para encontrar lo maravilloso.');
