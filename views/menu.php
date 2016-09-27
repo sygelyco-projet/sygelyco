@@ -4,13 +4,13 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
 				</br>
-				 <li class="active">
+				 <li <?php if(!isset($_GET['menu'])) {?>class="active" <?php } ?>>
                       <a class="" href="home.php?lang=<?php echo $_GET['lang']; ?>">
                           <i class="icon_house_alt"></i>
                           <span><?php echo menu1; ?></span>
                       </a>
-                  </li>
-				  <li class="sub-menu">
+                 </li>
+				 <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_document_alt"></i>
                           <span><?php echo module1_enregistrement; ?></span>
