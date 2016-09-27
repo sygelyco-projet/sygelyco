@@ -107,13 +107,31 @@
 
   $("#lang_home").on('change', function() {
    var lang = $(this).val(); // on récupère la lang
+   	var menu = $_GET('menu'); //on recupere le menu en cours
   $.ajax({
      data: "lang="+lang,
      success: function(msg){
-    window.location='home.php?lang='+lang;
+
+	if(menu==null) window.location='home.php?lang='+lang;
+    else window.location='home.php?lang='+lang+'&menu='+menu;
      }
   });
  });
  
 });
+
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}
 </script>
