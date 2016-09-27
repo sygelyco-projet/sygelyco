@@ -62,7 +62,7 @@
                               </div>
                           </div>
                           <div class="panel panel-default">
-						  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                               <div class="panel-heading">
                                   <h4 class="panel-title">
                                           Filiation et infos. urgence                                      
