@@ -59,8 +59,8 @@
 	 define('enregistrement_niveau', 'niveau');
 	 define('module2_enregistrement', 'Planifications');
 	 define('planifications_enseignement', 'enseignement');
-	 define('planifications_matieres_personnel', 'matieres des personnels');
-	 define('planif²ications_matieres_classe', 'matieres par classe');
+	 define('planifications_matieres_personnel', 'matieres personnels');
+	 define('planifications_matieres_classe', 'matieres par classe');
 	 define('module3_gestion_eleve', 'Eleves');
 	 define('gestion_eleve_notes', 'notes');
 	 define('gestion_eleve_abscences', 'abscences');
