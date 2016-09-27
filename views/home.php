@@ -81,6 +81,10 @@ header('Refresh:0;'.$url.'');
 					else if ($_GET['menu']=='enregistrement_statu') echo module1_enregistrement.'>'.enregistrement_statu;
 					else if ($_GET['menu']=='enregistrement_droit') echo module1_enregistrement.'>'.enregistrement_droit;
 					else if ($_GET['menu']=='enregistrement_sanction') echo module1_enregistrement.'>'.enregistrement_sanction;
+					else if ($_GET['menu']=='enregistrement_niveau') echo module1_enregistrement.'>'.enregistrement_niveau;
+					else if ($_GET['menu']=='planifications_enseignement') echo module2_enregistrement.'>'.planifications_enseignement;
+					else if ($_GET['menu']=='planifications_matieres_personnel') echo module2_enregistrement.'>'.planifications_matieres_personnel;
+					else if ($_GET['menu']=='planifications_matieres_classe') echo module2_enregistrement.'>'.planifications_matieres_classe;
 				
 				}else {echo tableau_de_bord; }
 				?>					
@@ -93,17 +97,21 @@ header('Refresh:0;'.$url.'');
 				<?php
 				if(isset($_GET['menu'])){
 					if ($_GET['menu']=='help') include("help/help.php");
-					if ($_GET['menu']=='enregistrement_eleve') include("enregistrements/enregistrement_eleve.php");
-					if ($_GET['menu']=='enregistrement_personnel') include("enregistrements/enregistrement_personnel.php");
-					if ($_GET['menu']=='enregistrement_utilisaeur') include("enregistrements/enregistrement_utilisaeur.php");
-					if ($_GET['menu']=='enregistrement_cycle') include("enregistrements/enregistrement_cycle.php");
-					if ($_GET['menu']=='enregistrement_classe') include("enregistrements/enregistrement_classe.php");
-					if ($_GET['menu']=='enregistrement_matiere') include("enregistrements/enregistrement_matiere.php");
-					if ($_GET['menu']=='enregistrement_sequence') include("enregistrements/enregistrement_sequence.php");
-					if ($_GET['menu']=='enregistrement_grade') include("enregistrements/enregistrement_grade.php");
-					if ($_GET['menu']=='enregistrement_statu') include("enregistrements/enregistrement_statu.php");
-					if ($_GET['menu']=='enregistrement_droit') include("enregistrements/enregistrement_droit.php");
-					if ($_GET['menu']=='enregistrement_sanction') include("enregistrements/enregistrement_sanction.php");
+					else if ($_GET['menu']=='enregistrement_eleve') include("enregistrements/enregistrement_eleve.php");
+					else if ($_GET['menu']=='enregistrement_personnel') include("enregistrements/enregistrement_personnel.php");
+					else if ($_GET['menu']=='enregistrement_utilisaeur') include("enregistrements/enregistrement_utilisaeur.php");
+					else if ($_GET['menu']=='enregistrement_cycle') include("enregistrements/enregistrement_cycle.php");
+					else if ($_GET['menu']=='enregistrement_classe') include("enregistrements/enregistrement_classe.php");
+					else if ($_GET['menu']=='enregistrement_matiere') include("enregistrements/enregistrement_matiere.php");
+					else if ($_GET['menu']=='enregistrement_sequence') include("enregistrements/enregistrement_sequence.php");
+					else if ($_GET['menu']=='enregistrement_grade') include("enregistrements/enregistrement_grade.php");
+					else if ($_GET['menu']=='enregistrement_statu') include("enregistrements/enregistrement_statu.php");
+					else if ($_GET['menu']=='enregistrement_droit') include("enregistrements/enregistrement_droit.php");
+					else if ($_GET['menu']=='enregistrement_sanction') include("enregistrements/enregistrement_sanction.php");
+					else if ($_GET['menu']=='enregistrement_niveau') include("enregistrements/enregistrement_niveau.php");
+					else if ($_GET['menu']=='planifications_enseignement') include("planifications/planifications_enseignement.php");
+					else if ($_GET['menu']=='planifications_matieres_personnel') include("planifications/planifications_matieres_personnel.php");
+					else if ($_GET['menu']=='planifications_matieres_classe') include("planifications/planifications_matieres_classe.php");
 				
 				}else {include("home_content.php"); }
 				?>

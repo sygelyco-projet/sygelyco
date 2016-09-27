@@ -56,6 +56,11 @@
 	 define('enregistrement_statu', 'status');
 	 define('enregistrement_droit', 'law');
 	 define('enregistrement_sanction', 'sanction');
+	 define('enregistrement_niveau', 'level');
+	 define('module2_enregistrement', 'Planning');
+	 define('planifications_enseignement', 'teaching');
+	 define('planifications_matieres_personnel', 'Personnal disciplines');
+	 define('planifications_matieres_classe', 'disciplines per class');
 	 define('citation1', 'Originality is nothing that a sensible imagination.');
 	 define('citation2', 'The two secrets of success: Quality and Creativity.');
 	 define('citation3', 'Creativity is piercing the mundane to find the marvelous.');

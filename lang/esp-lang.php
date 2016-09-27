@@ -56,6 +56,11 @@
 	 define('enregistrement_statu', 'estatus');
 	 define('enregistrement_droit', 'derecho');
 	 define('enregistrement_sanction', 'sancion');
+	 define('enregistrement_niveau', 'nivel');
+	 define('module2_enregistrement', 'Planifications');
+	 define('planifications_enseignement', 'ensenando');
+	 define('planifications_matieres_personnel', 'materias personales');
+	 define('planifications_matieres_classe', 'materias por clase');
 	 define('citation1', 'La originalidad es nada que una imaginacion sensible.');
 	 define('citation2', 'Los dos secretos del éxito: calidad y creatividad.');
 	 define('citation3', 'La creatividad es la perforacion de lo mundano para encontrar lo maravilloso.');

@@ -1,0 +1,1 @@
+ici on enregistre les matires enseigne pas un personnel dans un classe une anne donnee. bref la table enseigner

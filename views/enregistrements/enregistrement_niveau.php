@@ -1,0 +1,1 @@
+enregistrement dune categorie de classe

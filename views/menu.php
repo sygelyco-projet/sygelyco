@@ -21,6 +21,7 @@
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_personnel"><?php echo enregistrement_personnel; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_utilisaeur"><?php echo enregistrement_utilisaeur; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_cycle"><?php echo enregistrement_cycle; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_niveau"><?php echo enregistrement_niveau; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_classe"><?php echo enregistrement_classe; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_matiere"><?php echo enregistrement_matiere; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_sequence"><?php echo enregistrement_sequence; ?></a></li>
@@ -29,7 +30,20 @@
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_droit"><?php echo enregistrement_droit; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_sanction"><?php echo enregistrement_sanction; ?></a></li>
                       </ul>
-                  </li>       
+                  </li>    
+                             
+                  <li class="sub-menu">
+                      <a href="#" class="">
+                          <i class="icon_table"></i>
+                          <span><?php echo module2_enregistrement; ?></span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=planifications_matieres_personnel"><?php echo planifications_matieres_personnel; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=planifications_enseignement"><?php echo planifications_enseignement; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=planifications_matieres_classe"><?php echo planifications_matieres_classe; ?></a></li>
+                      </ul>
+                  </li>   
                 <!--  <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_desktop"></i>
@@ -55,17 +69,6 @@
                           
                       </a>
                                          
-                  </li>
-                             
-                  <li class="sub-menu">
-                      <a href="#" class="">
-                          <i class="icon_table"></i>
-                          <span>Module5</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="#">Sous module5</a></li>
-                      </ul>
                   </li>
                   
                   <li class="sub-menu">
