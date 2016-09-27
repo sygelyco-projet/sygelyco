@@ -70,7 +70,17 @@ header('Refresh:0;'.$url.'');
 				<?php
 				if(isset($_GET['menu'])){
 					if ($_GET['menu']=='help') echo aide;
-					if ($_GET['menu']=='enregistrement_eleve') echo module1_enregistrement.'>'.eleve;
+					else if ($_GET['menu']=='enregistrement_eleve') echo module1_enregistrement.'>'.enregistrement_eleve;
+					else if ($_GET['menu']=='enregistrement_personnel') echo module1_enregistrement.'>'.enregistrement_personnel;
+					else if ($_GET['menu']=='enregistrement_utilisaeur') echo module1_enregistrement.'>'.enregistrement_utilisaeur;
+					else if ($_GET['menu']=='enregistrement_cycle') echo module1_enregistrement.'>'.enregistrement_cycle;
+					else if ($_GET['menu']=='enregistrement_classe') echo module1_enregistrement.'>'.enregistrement_classe;
+					else if ($_GET['menu']=='enregistrement_matiere') echo module1_enregistrement.'>'.enregistrement_matiere;
+					else if ($_GET['menu']=='enregistrement_sequence') echo module1_enregistrement.'>'.enregistrement_sequence;
+					else if ($_GET['menu']=='enregistrement_grade') echo module1_enregistrement.'>'.enregistrement_grade;
+					else if ($_GET['menu']=='enregistrement_statu') echo module1_enregistrement.'>'.enregistrement_statu;
+					else if ($_GET['menu']=='enregistrement_droit') echo module1_enregistrement.'>'.enregistrement_droit;
+					else if ($_GET['menu']=='enregistrement_sanction') echo module1_enregistrement.'>'.enregistrement_sanction;
 				
 				}else {echo tableau_de_bord; }
 				?>					
@@ -84,6 +94,16 @@ header('Refresh:0;'.$url.'');
 				if(isset($_GET['menu'])){
 					if ($_GET['menu']=='help') include("help/help.php");
 					if ($_GET['menu']=='enregistrement_eleve') include("enregistrements/enregistrement_eleve.php");
+					if ($_GET['menu']=='enregistrement_personnel') include("enregistrements/enregistrement_personnel.php");
+					if ($_GET['menu']=='enregistrement_utilisaeur') include("enregistrements/enregistrement_utilisaeur.php");
+					if ($_GET['menu']=='enregistrement_cycle') include("enregistrements/enregistrement_cycle.php");
+					if ($_GET['menu']=='enregistrement_classe') include("enregistrements/enregistrement_classe.php");
+					if ($_GET['menu']=='enregistrement_matiere') include("enregistrements/enregistrement_matiere.php");
+					if ($_GET['menu']=='enregistrement_sequence') include("enregistrements/enregistrement_sequence.php");
+					if ($_GET['menu']=='enregistrement_grade') include("enregistrements/enregistrement_grade.php");
+					if ($_GET['menu']=='enregistrement_statu') include("enregistrements/enregistrement_statu.php");
+					if ($_GET['menu']=='enregistrement_droit') include("enregistrements/enregistrement_droit.php");
+					if ($_GET['menu']=='enregistrement_sanction') include("enregistrements/enregistrement_sanction.php");
 				
 				}else {include("home_content.php"); }
 				?>

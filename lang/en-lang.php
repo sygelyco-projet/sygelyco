@@ -45,7 +45,17 @@
 	 define('actualites', 'News');
 	 define('calandrier', 'Calendar');
 	 define('module1_enregistrement', 'Recordings');
-	 define('eleve', 'Student');
+	 define('enregistrement_eleve', 'student');
+	 define('enregistrement_personnel', 'staff');
+	 define('enregistrement_utilisaeur', 'user');
+	 define('enregistrement_cycle', 'cycle');
+	 define('enregistrement_classe', 'class');
+	 define('enregistrement_matiere', 'discipline');
+	 define('enregistrement_sequence', 'sequence');
+	 define('enregistrement_grade', 'grade');
+	 define('enregistrement_statu', 'status');
+	 define('enregistrement_droit', 'law');
+	 define('enregistrement_sanction', 'sanction');
 	 define('citation1', 'Originality is nothing that a sensible imagination.');
 	 define('citation2', 'The two secrets of success: Quality and Creativity.');
 	 define('citation3', 'Creativity is piercing the mundane to find the marvelous.');

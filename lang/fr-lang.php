@@ -45,7 +45,17 @@
 	 define('actualites', 'Actualités');
 	 define('calandrier', 'Calandrier');
 	 define('module1_enregistrement', 'Enregistrements');
-	 define('eleve', 'Eleve');
+	 define('enregistrement_eleve', 'eleve');
+	 define('enregistrement_personnel', 'personnel');
+	 define('enregistrement_utilisaeur', 'utilisateur');
+	 define('enregistrement_cycle', 'cycle');
+	 define('enregistrement_classe', 'classe');
+	 define('enregistrement_matiere', 'matiere');
+	 define('enregistrement_sequence', 'sequence');
+	 define('enregistrement_grade', 'grade');
+	 define('enregistrement_statu', 'statu');
+	 define('enregistrement_droit', 'droit');
+	 define('enregistrement_sanction', 'sanction');
 	 define('citation1', 'L originalité n est rien qu une judicieuse imagination.');
 	 define('citation2', 'Les deux secrets d un succès : la Qualité et la Creativité.');
 	 define('citation3', 'La créativité c’est percer le banal pour trouver le merveilleux.');

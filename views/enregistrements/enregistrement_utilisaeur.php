@@ -1,0 +1,1 @@
+noubliez pas le champs privilege pour remplir la table personnel privilege

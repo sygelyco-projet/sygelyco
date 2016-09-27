@@ -45,7 +45,17 @@
 	 define('actualites', 'Noticias');
 	 define('calandrier', 'Calendario');
 	 define('module1_enregistrement', 'grabaciones');
-	 define('eleve', 'alto');
+	 define('enregistrement_eleve', 'alto');
+	 define('enregistrement_personnel', 'personal');
+	 define('enregistrement_utilisaeur', 'usuario');
+	 define('enregistrement_cycle', 'ciclo');
+	 define('enregistrement_classe', 'clase');
+	 define('enregistrement_matiere', 'materia');
+	 define('enregistrement_sequence', 'secuencia');
+	 define('enregistrement_grade', 'grado');
+	 define('enregistrement_statu', 'estatus');
+	 define('enregistrement_droit', 'derecho');
+	 define('enregistrement_sanction', 'sancion');
 	 define('citation1', 'La originalidad es nada que una imaginacion sensible.');
 	 define('citation2', 'Los dos secretos del éxito: calidad y creatividad.');
 	 define('citation3', 'La creatividad es la perforacion de lo mundano para encontrar lo maravilloso.');

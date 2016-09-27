@@ -17,7 +17,17 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_eleve"><?php echo eleve; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_eleve"><?php echo enregistrement_eleve; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_personnel"><?php echo enregistrement_personnel; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_utilisaeur"><?php echo enregistrement_utilisaeur; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_cycle"><?php echo enregistrement_cycle; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_classe"><?php echo enregistrement_classe; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_matiere"><?php echo enregistrement_matiere; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_sequence"><?php echo enregistrement_sequence; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_grade"><?php echo enregistrement_grade; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_statu"><?php echo enregistrement_statu; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_droit"><?php echo enregistrement_droit; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_sanction"><?php echo enregistrement_sanction; ?></a></li>
                       </ul>
                   </li>       
                 <!--  <li class="sub-menu">

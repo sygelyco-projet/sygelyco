@@ -13,7 +13,7 @@
                               <div id="collapseOne" class="panel-collapse collapse in">
                                    <div class="panel-body">
                               <div class="form">
-                                  <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                                  <form class="form-validate form-horizontal " id="register_form" method="get" action="#">
                                       
                                       <div class="form-group ">
                                           <label style="width:20%; text-align:left" for="matricule" class="control-label col-lg-2">Matricule <span class="required">*</span></label>
