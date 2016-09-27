@@ -60,7 +60,7 @@
 	 define('module2_enregistrement', 'Planifications');
 	 define('planifications_enseignement', 'enseignement');
 	 define('planifications_matieres_personnel', 'matieres des personnels');
-	 define('planifications_matieres_classe', 'matieres par classe');
+	 define('planif²ications_matieres_classe', 'matieres par classe');
 	 define('module3_gestion_eleve', 'Eleves');
 	 define('gestion_eleve_notes', 'notes');
 	 define('gestion_eleve_abscences', 'abscences');
@@ -70,5 +70,26 @@
 	 define('citation3', 'La créativité c’est percer le banal pour trouver le merveilleux.');
 	 define('citation4', 'Créer vos établissements et laisser nous le numériser avec une créativité sans pareil.');
 	 define('citation5', 'Concevoir c’est bien mai réaliser c’est encore mieux.');
+	 
+	 define('module4_production', 'Productions');
+	 define('productions_bulletins', 'Bulletins');
+	 define('productions_statistiques', 'statistiques');
+	 define('productions_graphes', 'graphes');
+	 
+	 define('module5_sms', 'Messages');
+	 define('sms_achat', 'acheter');
+	 define('sms_envoi', 'envoyer');
+	 define('sms_boite_envois', 'boite des envois');
+	 
+	 define('module6_consultations', 'Consultations');
+	 
+	 define('module7_droits', 'Droits');
+	 define('droits_attribuer', 'attribuer');
+	 define('droits_retirer', 'retirer');
+	 define('droits_consulter', 'consulter');
+	 
+	 define('module8_systeme', 'Système');
+	 define('systeme_new_year', 'nouvelle année');
+	 define('systeme_parametres', 'paramètres');
 
 ?>

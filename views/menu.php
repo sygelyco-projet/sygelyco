@@ -57,45 +57,66 @@
                           <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=gestion_eleve_abscences"><?php echo gestion_eleve_abscences; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=gestion_eleve_sancions"><?php echo gestion_eleve_sancions; ?></a></li>
                       </ul>
-                  </li>   
-                <!--  <li class="sub-menu">
-                      <a href="#" class="">
-                          <i class="icon_desktop"></i>
-                          <span>Module2</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="#">Sous module2</a></li>
-                          <li><a class="" href="#">sous module2</a></li>
-                          <li><a class="" href="#">sous module2</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="" href="#">
-                          <i class="icon_genius"></i>
-                          <span>Module3</span>
-                      </a>
-                  </li>
-                  <li>                     
-                      <a class="" href="#">
-                          <i class="icon_piechart"></i>
-                          <span>Module4</span>
-                          
-                      </a>
-                                         
                   </li>
                   
                   <li class="sub-menu">
                       <a href="#" class="">
                           <i class="icon_documents_alt"></i>
-                          <span>Module6</span>
+                          <span><?php echo module4_production; ?></span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">                          
-                          <li><a class="" href="#">sous Module6</a></li>
-                          <li><a class="" href="#">sous Module6</a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=productions_bulletins"><?php echo productions_bulletins; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=productions_statistiques"><?php echo productions_statistiques; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=productions_graphes"><?php echo gestion_eleve_sancions; ?></a></li>
                       </ul>
-                  </li> -->
+                  </li>   
+				  
+				  <li class="sub-menu">
+                      <a href="#" class="">
+                          <i class="icon_mail_alt"></i>
+                          <span><?php echo module5_sms; ?></span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">                          
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=sms_achat"><?php echo sms_achat; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=sms_envoi"><?php echo sms_envoi; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=sms_boite_envois"><?php echo sms_boite_envois; ?></a></li>
+                      </ul>
+                  </li>
+				  
+				  <li>
+                      <a href="home.php?lang=<?php echo $_GET['lang'];?>&menu=consultations" class="">
+                          <i class="icon_desktop"></i>
+                          <span><?php echo module6_consultations; ?></span>
+                      </a>
+                  </li>
+				
+				<li class="sub-menu">
+                      <a href="#" class="">
+                          <i class="icon_piechart"></i>
+                          <span><?php echo module7_droits; ?></span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=droits_attribuer"><?php echo droits_attribuer; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=droits_retirer"><?php echo droits_retirer; ?></a></li>
+						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=droits_consulter"><?php echo droits_consulter; ?></a></li>
+                      </ul>
+                  </li>
+				  
+   				  <li class="sub-menu">
+                      <a href="#" class="">
+                          <i class="icon_genius"></i>
+                          <span><?php echo module8_systeme; ?></span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=systeme_new_year"><?php echo systeme_new_year; ?></a></li>
+                          <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=systeme_parametres"><?php echo systeme_parametres; ?></a></li>
+                      </ul>
+                  </li>
+
                   
               </ul>
               <!-- sidebar menu end-->

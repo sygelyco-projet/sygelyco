@@ -70,5 +70,26 @@
 	 define('citation3', 'Creativity is piercing the mundane to find the marvelous.');
 	 define('citation4', 'Create your establishments and let us scan it with unparalleled creativity.');
 	 define('citation5', 'Design may realize it is even better.');
+	 
+	 define('module4_production', 'Productions');
+	 define('productions_bulletins', 'report');
+	 define('productions_statistiques', 'statistics');
+	 define('productions_graphes', 'graphs');
+	 
+	 define('module5_sms', 'Messages');
+	 define('sms_achat', 'buy');
+	 define('sms_envoi', 'send');
+	 define('sms_boite_envois', 'mail box');
+	 
+	 define('module6_consultations', 'Consultations');
+	 
+	 define('module7_droits', 'User right');
+	 define('droits_attribuer', 'attribute');
+	 define('droits_retirer', 'remove');
+	 define('droits_consulter', 'consult');
+	 
+	 define('module8_systeme', 'System');
+	 define('systeme_new_year', 'new year');
+	 define('systeme_parametres', 'settings');
 
 ?>

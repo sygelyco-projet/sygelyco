@@ -70,5 +70,26 @@
 	 define('citation3', 'La creatividad es la perforacion de lo mundano para encontrar lo maravilloso.');
 	 define('citation4', 'Crear sus establecimientos y vamos a analizarlo con la creatividad sin igual.');
 	 define('citation5', 'Diseño puede darse cuenta de que es incluso mejor.');
+	 
+	 define('module4_production', 'Producciones');
+	 define('productions_bulletins', 'boletines');
+	 define('productions_statistiques', 'estadistica');
+	 define('productions_graphes', 'graficos');
+	 
+	 define('module5_sms', 'Mensajes');
+	 define('sms_achat', 'comprar');
+	 define('sms_envoi', 'enviar');
+	 define('sms_boite_envois', 'buzon');
+	 
+	 define('module6_consultations', 'Consultas');
+	 
+	 define('module7_droits', 'derecho');
+	 define('droits_attribuer', 'premio');
+	 define('droits_retirer', 'retirar');
+	 define('droits_consulter', 'consultas');
+	 
+	 define('module8_systeme', 'Systema');
+	 define('systeme_new_year', 'ano Nuevo');
+	 define('systeme_parametres', 'ajustes');
 
 ?>

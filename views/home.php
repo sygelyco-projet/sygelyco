@@ -88,6 +88,18 @@ header('Refresh:0;'.$url.'');
 					else if ($_GET['menu']=='gestion_eleve_notes') echo module3_gestion_eleve.'>'.gestion_eleve_notes;
 					else if ($_GET['menu']=='gestion_eleve_abscences') echo module3_gestion_eleve.'>'.gestion_eleve_abscences;
 					else if ($_GET['menu']=='gestion_eleve_sancions') echo module3_gestion_eleve.'>'.gestion_eleve_sancions;
+					else if ($_GET['menu']=='productions_bulletins') echo module4_production.'>'.productions_bulletins;
+					else if ($_GET['menu']=='productions_statistiques') echo module4_production.'>'.productions_statistiques;
+					else if ($_GET['menu']=='productions_graphes') echo module4_production.'>'.productions_graphes;
+					else if ($_GET['menu']=='sms_achat') echo module5_sms.'>'.sms_achat;
+					else if ($_GET['menu']=='sms_envoi') echo module5_sms.'>'.sms_envoi;
+					else if ($_GET['menu']=='sms_boite_envois') echo module5_sms.'>'.sms_boite_envois;
+					else if ($_GET['menu']=='consultations') echo module6_consultations;
+					else if ($_GET['menu']=='droits_attribuer') echo module7_droits.'>'.droits_attribuer;
+					else if ($_GET['menu']=='droits_retirer') echo module7_droits.'>'.droits_retirer;
+					else if ($_GET['menu']=='droits_consulter') echo module7_droits.'>'.droits_consulter;
+					else if ($_GET['menu']=='systeme_new_year') echo module8_systeme.'>'.systeme_new_year;
+					else if ($_GET['menu']=='systeme_parametres') echo module8_systeme.'>'.systeme_parametres;
 				
 				}else {echo tableau_de_bord; }
 				?>					
@@ -118,6 +130,18 @@ header('Refresh:0;'.$url.'');
 					else if ($_GET['menu']=='gestion_eleve_notes') include("gestion_eleve/gestion_eleve_notes.php");
 					else if ($_GET['menu']=='gestion_eleve_abscences') include("gestion_eleve/gestion_eleve_abscences.php");
 					else if ($_GET['menu']=='gestion_eleve_sancions') include("gestion_eleve/gestion_eleve_sancions.php");
+					else if ($_GET['menu']=='productions_bulletins') include("production/productions_bulletins.php");
+					else if ($_GET['menu']=='productions_statistiques') include("production/productions_statistiques.php");
+					else if ($_GET['menu']=='productions_graphes') include("production/productions_graphes.php");
+					else if ($_GET['menu']=='sms_achat') include("sms/sms_achat.php");
+					else if ($_GET['menu']=='sms_envoi') include("sms/sms_envoi.php");
+					else if ($_GET['menu']=='sms_boite_envois') include("sms/sms_boite_envois.php");
+					else if ($_GET['menu']=='consultations') include("consultations/consultations.php");
+					else if ($_GET['menu']=='droits_attribuer') include("droits/droits_attribuer.php");
+					else if ($_GET['menu']=='droits_retirer') include("droits/droits_retirer.php");
+					else if ($_GET['menu']=='droits_consulter') include("droits/droits_consulter.php");
+					else if ($_GET['menu']=='systeme_new_year') include("systeme/systeme_new_year.php");
+					else if ($_GET['menu']=='systeme_parametres') include("systeme/systeme_parametres.php");
 				
 				}else {include("home_content.php"); }
 				?>

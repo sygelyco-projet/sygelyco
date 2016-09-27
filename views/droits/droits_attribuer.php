@@ -1,0 +1,1 @@
+droits_attribuer
