@@ -92,4 +92,14 @@
 	 define('systeme_new_year', 'new year');
 	 define('systeme_parametres', 'settings');
 
+	 //added by ayef
+	 define('nom_etablissement', 'School name');
+	 define('nom_proviseur', 'headmaster name');
+	 define('boite_postale', 'post box');
+	 define('tel_etablissement1', 'school phone number');
+	 define('email_etab', 'school email');
+	 define('signature_proviseur', 'headmaster signature');
+	 define('slide_text', 'pictures of the institution for the Home screen');
+	 define('image_', 'picture');
+
 ?>

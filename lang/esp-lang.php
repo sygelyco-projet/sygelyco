@@ -92,4 +92,14 @@
 	 define('systeme_new_year', 'ano Nuevo');
 	 define('systeme_parametres', 'ajustes');
 
+	 //added by ayef
+	 define('nom_etablissement', 'Nombre del establecimiento');
+	 define('nom_proviseur', 'Nombre del director');
+	 define('boite_postale', 'Buzón de correos');
+	 define('tel_etablissement1', 'Número de teléfono del establecimiento');
+	 define('email_etab', 'e-mail del establecimiento');
+	 define('signature_proviseur', 'firma del director');
+	 define('slide_text', 'imagen del establecimiento a la pantalla de inicio');
+	 define('image_', 'imagen');
+
 ?>

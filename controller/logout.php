@@ -7,7 +7,8 @@ $_SESSION = array();
 session_destroy();
 //var_dump($home_path);
 $url=$home_path.'/index.php?lang='.$_GET['lang']; 
-echo '<script>window.location.href ="'.$url.'";</script>';
+header('Refresh:0;'.$url.'');
+//echo '<script>window.location.href ="'.$url.'";</script>';
 
     // exit();
  /*header('Location: '.$home_path.'/index.php');

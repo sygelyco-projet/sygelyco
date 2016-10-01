@@ -92,4 +92,15 @@
 	 define('systeme_new_year', 'nouvelle année');
 	 define('systeme_parametres', 'paramètres');
 
+	 //added by ayef
+	 define('nom_etablissement', 'Nom etablissement');
+	 define('nom_proviseur', 'Nom proviseur');
+	 define('boite_postale', 'boite postale');
+	 define('tel_etablissement1', 'tel établissement');
+	 define('email_etab', 'Email établissement');
+	 define('signature_proviseur', 'Signature proviseur');
+	 define('slide_text', 'images de l\'etablissement pour l\'écran d\'accueil');
+	 define('image_', 'image');
+	 
+
 ?>
