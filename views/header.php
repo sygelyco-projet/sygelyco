@@ -6,7 +6,12 @@
             </div>
 
             <!--logo start-->
-            <a href="../public_files/index.html" class="logo">LOGO <span class="lite">LYCEE</span></a>
+            <?php if(empty($etablissement->getlogo())){
+            echo '<a href="../public_files/index.html" class="logo">LOGO <span class="lite">LYCEE</span></a>';
+             }else{
+            echo '<a href="../public_files/index.html" class="logo"><img src="../public_files/img/home/'.$etablissement->getlogo().'"></img></a>';
+                }?>
+            
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">

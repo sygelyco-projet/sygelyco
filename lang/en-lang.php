@@ -93,6 +93,10 @@
 	 define('systeme_parametres', 'settings');
 
 	 //added by ayef
+
+	 define('_enregistrer', 'Save');
+	 define('_annuler', 'Cancel');
+	 //etablissement
 	 define('nom_etablissement', 'School name');
 	 define('nom_proviseur', 'headmaster name');
 	 define('boite_postale', 'post box');
@@ -101,5 +105,11 @@
 	 define('signature_proviseur', 'headmaster signature');
 	 define('slide_text', 'pictures of the institution for the Home screen');
 	 define('image_', 'picture');
+	 define('welcome_etablissement', 'please fill in the following information to change the settings of high school.');
+
+	 //cycle
+	 define('nom_cycle', 'cycle name');
+	 define('des_cycle', 'cycle description');
+	 define('welcome_cycle', 'please register a cycle');
 
 ?>

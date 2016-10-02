@@ -1,12 +1,15 @@
  <?php
  require '../connexionBD/connexionBD.php';
  require '../controller/session.php';
+ require '../models/etablissement.php';
   if (!isset($_SESSION['user']))
 {
 if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
 $url='../index.php?lang='.$_GET['lang']; 
 header('Refresh:0;'.$url.'');
 }
+$etablissement=new Etablissement();
+$etablissement->getcurrentEtablissement();
   ?>
 <!DOCTYPE html>
 <html lang="en">

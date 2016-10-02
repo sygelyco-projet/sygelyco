@@ -93,6 +93,10 @@
 	 define('systeme_parametres', 'paramètres');
 
 	 //added by ayef
+
+	 define('_enregistrer', 'Enregistrer');
+	 define('_annuler', 'Annuler');
+	 //etablissement
 	 define('nom_etablissement', 'Nom etablissement');
 	 define('nom_proviseur', 'Nom proviseur');
 	 define('boite_postale', 'boite postale');
@@ -101,6 +105,12 @@
 	 define('signature_proviseur', 'Signature proviseur');
 	 define('slide_text', 'images de l\'etablissement pour l\'écran d\'accueil');
 	 define('image_', 'image');
+	 define('welcome_etablissement', 'Veuillez remplir les informations suivantes pour modifier les parametres du lycee.');
+
+	 //cycle
+	 define('nom_cycle', 'Nom du cycle');
+	 define('des_cycle', 'Description du cycle');
+	 define('welcome_cycle', 'veuillez enregistrer un cycle');
 	 
 
 ?>

@@ -93,6 +93,10 @@
 	 define('systeme_parametres', 'ajustes');
 
 	 //added by ayef
+
+	  define('_enregistrer', 'registro');
+	 define('_annuler', 'cancelar');
+	 //etablissement
 	 define('nom_etablissement', 'Nombre del establecimiento');
 	 define('nom_proviseur', 'Nombre del director');
 	 define('boite_postale', 'Buzón de correos');
@@ -101,5 +105,11 @@
 	 define('signature_proviseur', 'firma del director');
 	 define('slide_text', 'imagen del establecimiento a la pantalla de inicio');
 	 define('image_', 'imagen');
+	 define('welcome_etablissement', 'por favor complete la siguiente información para cambiar la configuración de la escuela secundaria');
+
+	 //cycle
+	 define('nom_cycle', 'Nombre del ciclo');
+	 define('des_cycle', 'Descripción del ciclo');
+	 define('welcome_cycle', 'Registre un ciclo');
 
 ?>

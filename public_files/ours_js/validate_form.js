@@ -25,9 +25,6 @@ $("#register_school").validate({
                 phone_number: {
                     required: true
                 },
-                logo: {
-                    required: true
-                },
                 topic: {
                     required: "#newsletter:checked",
                     minlength: 2
@@ -56,25 +53,26 @@ $("#register_school").validate({
                     minlength: "Your password must be at least 5 characters long.",
                     equalTo: "Please enter the same password as above."
                 },
-                logo: {
-                    required: "Please provide a file."
-                },
                 phone_number: "Please enter a phone number.",
                 agree: "Please accept our terms & condition."
             },
             submitHandler: function(form) {
+                //console.log(validate());
                 if(validate()==1)
-                form.submit();
+                 form.submit();
     }
              
         });
 
-   
+
 
  });
 
  function validate(){
     var test=0;
+    var test2=0;
+    //pr le logo
+
     var id="logo";
     var size1=102400;
     var height1=30;
@@ -82,12 +80,8 @@ $("#register_school").validate({
     var fileUpload = document.getElementById(id);
     $('#'+id).change(function(){  $("#file_error_"+id).html(""); });
     //Check whether the file is valid Image.
-         var file_size = $('#'+id)[0].files[0].size;
-        if(file_size>size1) {
-            $("#file_error_"+id).html("File size is greater than 100ko");
-            $("#file_error_"+id).css("color","red");
-           test=0;
-        } else test=1;
+    if(fileUpload.files[0]!=null){
+        test2=1;
                     
     var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(.jpg|.png|.jpeg)$");
     if (regex.test(fileUpload.value.toLowerCase())) {
@@ -111,8 +105,15 @@ $("#register_school").validate({
                     if (height>height1 || width >width1) {
                         $("#file_error_"+id).html("invalide Height or Width");
                         $("#file_error_"+id).css("color","red");
-                       test=0;
+                       return 0;
                     }else test=1;
+
+                    var file_size = $('#'+id)[0].files[0].size;
+                    if(file_size>size1) {
+                        $("#file_error_"+id).html("File size is greater than 100ko");
+                        $("#file_error_"+id).css("color","red");
+                       return 0;
+                    } else test=1;
                     
                 };
  
@@ -120,13 +121,75 @@ $("#register_school").validate({
         } else {
             $("#file_error_"+id).html("This browser does not support HTML5.");
             $("#file_error_"+id).css("color","red");
-            test=0;
+            return 0;
         }
     } else {
         $("#file_error_"+id).html("Please select a valid Image file.(jpg,jpeg,png)");
             $("#file_error_"+id).css("color","red");
-        test=0;
+        return 0;
     }
+}
+
+    //pr la signature
+    var id1="exampleInputFile";
+    var size1=102400;
+    var height1=30;
+    var width1=30;
+    var fileUpload = document.getElementById(id1);
+    $('#'+id1).change(function(){  $("#file_error_"+id1).html(""); });
+    //Check whether the file is valid Image.
+    if(fileUpload.files[0]!=null){
+        test2=1;
+        //console.log("ok");
+                    
+    var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(.jpg|.png|.jpeg)$");
+    if (regex.test(fileUpload.value.toLowerCase())) {
+        //Check whether HTML5 is supported.
+        if (typeof (fileUpload.files) != "undefined") {
+            //Initiate the FileReader object.
+            var reader = new FileReader();
+            //Read the contents of Image File.
+            reader.readAsDataURL(fileUpload.files[0]);
+            reader.onload = function (e) {
+                //Initiate the JavaScript Image object.
+                var image = new Image();
+ 
+                //Set the Base64 string return from FileReader as source.
+                image.src = e.target.result;
+                       
+                //Validate the File Height and Width.
+                image.onload = function () {
+                    var height = this.height;
+                    var width = this.width;
+                    if (height!=height1 || width !=width1) {
+                        $("#file_error_"+id1).html("invalide Height or Width");
+                        $("#file_error_"+id1).css("color","red");
+                      return 0;
+                    }else test=1;
+
+                     var file_size = $('#'+id1)[0].files[0].size;
+                    if(file_size>size1) {
+                        $("#file_error_"+id1).html("File size is greater than 100ko");
+                        $("#file_error_"+id1).css("color","red");
+                       return 0;
+                    } else test=1;
+                    
+                };
+ 
+            }
+        } else {
+            $("#file_error_"+id1).html("This browser does not support HTML5.");
+            $("#file_error_"+id1).css("color","red");
+           return 0;
+        }
+    } else {
+        $("#file_error_"+id1).html("Please select a valid Image file.(jpg,jpeg,png)");
+            $("#file_error_"+id1).css("color","red");
+       return 0;
+    }
+}
+
+
     $('.fileupload').each(function () {
         var id=this.id;
      var size1=204800;
@@ -135,12 +198,7 @@ $("#register_school").validate({
     var fileUpload = document.getElementById(id);
     $('#'+id).change(function(){  $("#file_error_"+id).html(""); });
     if(fileUpload.files[0]!=null){
-            var file_size = $('#'+id)[0].files[0].size;
-        if(file_size>size1) {
-            $("#file_error_"+id).html("File size is greater than 100ko");
-            $("#file_error_"+id).css("color","red");
-            test=0;
-        } else test=1;
+        test2=1;
                     
     //Check whether the file is valid Image.
     var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(.jpg|.png|.jpeg)$");
@@ -165,25 +223,32 @@ $("#register_school").validate({
                     if (height!=height1 || width !=width1) {
                         $("#file_error_"+id).html("invalide Height or Width");
                         $("#file_error_"+id).css("color","red");
-                       test=0;
-                    }else test==1;
-                    
+                      return 0;
+                    }else test=1;
+
+                    var file_size = $('#'+id)[0].files[0].size;
+                if(file_size>size1) {
+                    $("#file_error_"+id).html("File size is greater than 100ko");
+                    $("#file_error_"+id).css("color","red");
+                    return 0;
+                } else test=1;
+                            
                 };
  
             }
         } else {
             $("#file_error_"+id).html("This browser does not support HTML5.");
             $("#file_error_"+id).css("color","red");
-            test=0;
+           return 0;
         }
     } else {
         $("#file_error_"+id).html("Please select a valid Image file.(jpg,jpeg,png)");
             $("#file_error_"+id).css("color","red");
-        test=0;
+            return 0;
     }
 }
  });
-
-    return test;
+    if(test2==0) return 1;
+    else return test;
 
 }
