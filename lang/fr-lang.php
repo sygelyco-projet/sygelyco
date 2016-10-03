@@ -111,6 +111,12 @@
 	 define('nom_cycle', 'Nom du cycle');
 	 define('des_cycle', 'Description du cycle');
 	 define('welcome_cycle', 'veuillez enregistrer un cycle');
+
+
+	 //niveau
+	 define('welcome_niveau', 'veuillez enregistrer un niveau');
+	 define('nom_niveau', 'Nom du niveau');
+	 define('des_niveau', 'Description du niveau');
 	 
 
 ?>

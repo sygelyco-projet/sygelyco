@@ -29,6 +29,13 @@ public function save($nom_cy,$description_cy){
             'description_cy' => $description_cy
             ));
 }
+
+public function allcycle(){
+			global $db;
+            $req = $db->query('SELECT * FROM cycle');
+            $find = $req->fetchAll();
+            return $find;
+}
 }
 
 ?>

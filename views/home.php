@@ -2,6 +2,7 @@
  require '../connexionBD/connexionBD.php';
  require '../controller/session.php';
  require '../models/etablissement.php';
+ require '../models/cycle.php';
   if (!isset($_SESSION['user']))
 {
 if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
@@ -10,6 +11,8 @@ header('Refresh:0;'.$url.'');
 }
 $etablissement=new Etablissement();
 $etablissement->getcurrentEtablissement();
+$cycle=new Cycle();
+$cycles=$cycle->allcycle();
   ?>
 <!DOCTYPE html>
 <html lang="en">

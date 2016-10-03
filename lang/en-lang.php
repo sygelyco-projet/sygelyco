@@ -112,4 +112,8 @@
 	 define('des_cycle', 'cycle description');
 	 define('welcome_cycle', 'please register a cycle');
 
+	 //niveau
+	 define('welcome_niveau', 'please register a level');
+	 define('nom_niveau', 'level name');
+	 define('des_niveau', 'level description');
 ?>

@@ -21,7 +21,9 @@
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_personnel"><?php echo enregistrement_personnel; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_utilisaeur"><?php echo enregistrement_utilisaeur; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_cycle"><?php echo enregistrement_cycle; ?></a></li>
-						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_niveau"><?php echo enregistrement_niveau; ?></a></li>
+              <?php if(!empty($cycles))
+						  echo '<li><a class="" href="home.php?lang='. $_GET['lang'].'&menu=enregistrement_niveau">'.enregistrement_niveau.'</a></li>';
+              ?>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_classe"><?php echo enregistrement_classe; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_matiere"><?php echo enregistrement_matiere; ?></a></li>
 						  <li><a class="" href="home.php?lang=<?php echo $_GET['lang'];?>&menu=enregistrement_sequence"><?php echo enregistrement_sequence; ?></a></li>
