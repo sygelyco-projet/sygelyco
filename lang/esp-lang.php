@@ -113,8 +113,15 @@
 	 define('welcome_cycle', 'Registre un ciclo');
 
 	 //niveau
-	 define('welcome_niveau', 'Registre un ');
+	 define('welcome_niveau', 'Registre un nivel');
 	 define('nom_niveau', 'Nombre del nivel');
 	 define('des_niveau', 'Descripción del nivel');
+
+	 //classe
+	 define('welcome_classe', 'Registre una clase');
+	 define('nom_classe', 'nombre de la clase');
+	 define('abre_classe', 'abreviatura de la clase');
+	 define('des_classe', 'Descripción de la clase');
+	 define('cat_classe', 'categoría de la clase');
 
 ?>

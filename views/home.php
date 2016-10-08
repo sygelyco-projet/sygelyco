@@ -3,6 +3,7 @@
  require '../controller/session.php';
  require '../models/etablissement.php';
  require '../models/cycle.php';
+ require '../models/categorie_classes.php';
   if (!isset($_SESSION['user']))
 {
 if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
@@ -13,6 +14,8 @@ $etablissement=new Etablissement();
 $etablissement->getcurrentEtablissement();
 $cycle=new Cycle();
 $cycles=$cycle->allcycle();
+$categorie=new Niveau();
+$categories=$categorie->allcategories();
   ?>
 <!DOCTYPE html>
 <html lang="en">

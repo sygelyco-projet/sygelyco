@@ -35,6 +35,13 @@ public function save($nom_cat,$description_cat,$id_cycle){
             ));
 }
 
+public function allcategories(){
+			global $db;
+            $req = $db->query('SELECT * FROM cathegorie_classe');
+            $find = $req->fetchAll();
+            return $find;
+}
+
 
 }
 

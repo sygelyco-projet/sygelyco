@@ -117,6 +117,13 @@
 	 define('welcome_niveau', 'veuillez enregistrer un niveau');
 	 define('nom_niveau', 'Nom du niveau');
 	 define('des_niveau', 'Description du niveau');
+
+	 //classe
+	 define('welcome_classe', 'Enregistrer une classe');
+	 define('nom_classe', 'Nom de la classe');
+	 define('abre_classe', 'abréviation de la classe');
+	 define('des_classe', 'Description de la classe');
+	 define('cat_classe', 'catégorie de la classe');
 	 
 
 ?>

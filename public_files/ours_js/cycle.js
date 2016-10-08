@@ -46,6 +46,7 @@ $(document).ready( function () {
     mydiv.innerHTML="<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>"+msg+
     "</div>";
     document.getElementById("alert").appendChild(mydiv);
+    $('html, body').animate({scrollTop:0}, 'slow');
     }
     else // bien enregistrer;
     {
@@ -58,6 +59,7 @@ $(document).ready( function () {
     mydiv.innerHTML="<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>"+msg+
     "</div>";
     document.getElementById("alert").appendChild(mydiv);
+    $('html, body').animate({scrollTop:0}, 'slow');
 
     $("#cycle_name1").val("");
     $("#cycle_name2").val("");

@@ -116,4 +116,12 @@
 	 define('welcome_niveau', 'please register a level');
 	 define('nom_niveau', 'level name');
 	 define('des_niveau', 'level description');
+
+	 //classe
+	 define('welcome_classe', 'Register a class');
+	 define('nom_classe', 'Class name');
+	 define('abre_classe', 'abbreviation of the class');
+	 define('des_classe', 'Description of the class');
+	 define('cat_classe', 'category of the class');
+	 
 ?>

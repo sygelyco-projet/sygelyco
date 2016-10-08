@@ -1,5 +1,5 @@
 <?php 
-class  classe{
+class  Classe{
 	private $_Categorie;
 	private $_Nom;
 	private $_Abrege;
@@ -13,6 +13,40 @@ class  classe{
 	
 	//autres fonctions
 	
+	public function check($cl){
+
+		 global $db;
+    $req = $db->prepare('SELECT * FROM classe WHERE nom_cl = ?');
+		$req->execute(array($cl));
+    $rep = $req->fetchAll();
+    if(!empty($rep))
+    	return 1;
+	else return 0;
+	
+}
+	public function check_abr($abr){
+
+		 global $db;
+    $req = $db->prepare('SELECT * FROM classe WHERE abrege = ?');
+		$req->execute(array($abr));
+    $rep = $req->fetchAll();
+    if(!empty($rep))
+    	return 1;
+	else return 0;
+	
+}
+
+public function save($cl,$abr,$description_cl,$id_cat){
+			global $db;
+           $req = $db->prepare('INSERT INTO classe(nom_cl, abrege,description_cl,id_cathegorie_classe,id_utilisateur) VALUES(:nom_cl, :abrege,:description_cl,:id_cathegorie_classe,:id_utilisateur)');
+        $req->execute(array(
+            'nom_cl' => $cl,
+            'abrege' => $abr,
+            'description_cl' => $description_cl,
+            'id_cathegorie_classe' => $id_cat,
+            'id_utilisateur' => $_SESSION['user']['id']
+            ));
+}
 	
 }
 
