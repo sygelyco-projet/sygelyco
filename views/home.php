@@ -54,7 +54,7 @@ $categories=$categorie->allcategories();
 	<link href="../public_files/css/xcharts.min.css" rel=" stylesheet">	
 	<link href="../public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 	<link href="../public_files/css/sb-admin-2.css" rel="stylesheet">
-		<script src="../Public_files/js/jquery-1.8.3.min.js"></script>
+		<script src="../public_files/js/jquery-1.8.3.min.js"></script>
   </head>
 
   <body>
