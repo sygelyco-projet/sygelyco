@@ -128,11 +128,14 @@
             <label class="checkbox">
                 <input type="checkbox" value="remember-me"> <?php echo se_rappeler; ?>
             </label>
-            <center><button class="btn btn-primary btn-lg btn-block" style="width: 40%" type="submit"><?php echo titre; ?></button></center>
-			<span class="pull-left"> <a href="#"> <?php echo passe_oublie; ?></a></span>
+            <center><button class="btn btn-info btn-circle btn-xl" style="width: 40%"><?php echo titre; ?></button></center>
+		<span class="pull-left" > <a href="#" id="label_passe_oublie"> <?php echo passe_oublie; ?></a></span>
+			
         </div>
       </form>
-		
+			
+			
+			<span id="div_passe_oublie">	</span><!-- span qui contiendra les éventuels messages d'erreur -->
 
                                           </div>
 

@@ -1,3 +1,14 @@
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <?php include("../../lang/decide-lang.php");?> 
+	<form class="navbar-form" name="Mail_Form" id="Mail_Form" action="#" method="post">
+		<center>Recuperation du mot de passe</center>
+         <center><input  name="adresse" id="adresse" placeholder="adresse@gmail.com" type="text">
+		 <input  name="code" id="code" placeholder="code de recuperation" type="text"></br>
+		 <button class="btn btn-info btn-circle btn-xl" style="width: 40%" type="submit">envoyer le mail</button></center>
+    </form>
+</div>
+<script>
 $(document).ready( function () {
  $("#connexionForm").submit( function() {        
   $.ajax({
@@ -97,3 +108,5 @@ function $_GET(param) {
 	}
 	return vars;
 }
+
+</scrit>
