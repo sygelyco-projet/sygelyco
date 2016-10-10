@@ -92,4 +92,36 @@
 	 define('systeme_new_year', 'ano Nuevo');
 	 define('systeme_parametres', 'ajustes');
 
+	 //added by ayef
+
+	  define('_enregistrer', 'registro');
+	 define('_annuler', 'cancelar');
+	 //etablissement
+	 define('nom_etablissement', 'Nombre del establecimiento');
+	 define('nom_proviseur', 'Nombre del director');
+	 define('boite_postale', 'Buzón de correos');
+	 define('tel_etablissement1', 'Número de teléfono del establecimiento');
+	 define('email_etab', 'e-mail del establecimiento');
+	 define('signature_proviseur', 'firma del director');
+	 define('slide_text', 'imagen del establecimiento a la pantalla de inicio');
+	 define('image_', 'imagen');
+	 define('welcome_etablissement', 'por favor complete la siguiente información para cambiar la configuración de la escuela secundaria');
+
+	 //cycle
+	 define('nom_cycle', 'Nombre del ciclo');
+	 define('des_cycle', 'Descripción del ciclo');
+	 define('welcome_cycle', 'Registre un ciclo');
+
+	 //niveau
+	 define('welcome_niveau', 'Registre un nivel');
+	 define('nom_niveau', 'Nombre del nivel');
+	 define('des_niveau', 'Descripción del nivel');
+
+	 //classe
+	 define('welcome_classe', 'Registre una clase');
+	 define('nom_classe', 'nombre de la clase');
+	 define('abre_classe', 'abreviatura de la clase');
+	 define('des_classe', 'Descripción de la clase');
+	 define('cat_classe', 'categoría de la clase');
+
 ?>

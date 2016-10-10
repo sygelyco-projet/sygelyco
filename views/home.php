@@ -1,12 +1,21 @@
  <?php
  require '../connexionBD/connexionBD.php';
  require '../controller/session.php';
+ require '../models/etablissement.php';
+ require '../models/cycle.php';
+ require '../models/categorie_classes.php';
   if (!isset($_SESSION['user']))
 {
 if(!isset($_GET['lang']))  $_GET['lang']='fr'; 
 $url='../index.php?lang='.$_GET['lang']; 
 header('Refresh:0;'.$url.'');
 }
+$etablissement=new Etablissement();
+$etablissement->getcurrentEtablissement();
+$cycle=new Cycle();
+$cycles=$cycle->allcycle();
+$categorie=new Niveau();
+$categories=$categorie->allcategories();
   ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +24,7 @@ header('Refresh:0;'.$url.'');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="../public_files/img/favicon.png">
 
@@ -44,7 +54,7 @@ header('Refresh:0;'.$url.'');
 	<link href="../public_files/css/xcharts.min.css" rel=" stylesheet">	
 	<link href="../public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 	<link href="../public_files/css/sb-admin-2.css" rel="stylesheet">
-		<script src="../Public_files/js/jquery-1.8.3.min.js"></script>
+		<script src="../public_files/js/jquery-1.8.3.min.js"></script>
   </head>
 
   <body>
@@ -62,7 +72,11 @@ header('Refresh:0;'.$url.'');
               <!--overview start-->
 			<div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-laptop"></i> <?php echo tableau_de_bord; ?></h3>
+        <?php if(isset($_SESSION['success_message']))
+        include("../views/alert_message/success.php"); 
+        unset($_SESSION['success_message']);
+        ?>
+					<!--<h3 class="page-header"><i class="fa fa-laptop"></i> <?php echo tableau_de_bord; ?></h3>-->
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="home.php?lang=<?php echo $_GET['lang']; ?>">
 						<?php echo menu1; ?></a></li>
@@ -194,6 +208,8 @@ header('Refresh:0;'.$url.'');
 	<script src="../public_files/js/sparklines.js"></script>	
 	<script src="../public_files/js/charts.js"></script>
 	<script src="../public_files/js/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="../public_files/js/jquery.validate.min.js"></script>
+  <script src="../public_files/js/form-validation-script.js"></script>
   <script>
 
       //knob

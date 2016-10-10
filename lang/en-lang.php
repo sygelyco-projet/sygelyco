@@ -92,4 +92,36 @@
 	 define('systeme_new_year', 'new year');
 	 define('systeme_parametres', 'settings');
 
+	 //added by ayef
+
+	 define('_enregistrer', 'Save');
+	 define('_annuler', 'Cancel');
+	 //etablissement
+	 define('nom_etablissement', 'School name');
+	 define('nom_proviseur', 'headmaster name');
+	 define('boite_postale', 'post box');
+	 define('tel_etablissement1', 'school phone number');
+	 define('email_etab', 'school email');
+	 define('signature_proviseur', 'headmaster signature');
+	 define('slide_text', 'pictures of the institution for the Home screen');
+	 define('image_', 'picture');
+	 define('welcome_etablissement', 'please fill in the following information to change the settings of high school.');
+
+	 //cycle
+	 define('nom_cycle', 'cycle name');
+	 define('des_cycle', 'cycle description');
+	 define('welcome_cycle', 'please register a cycle');
+
+	 //niveau
+	 define('welcome_niveau', 'please register a level');
+	 define('nom_niveau', 'level name');
+	 define('des_niveau', 'level description');
+
+	 //classe
+	 define('welcome_classe', 'Register a class');
+	 define('nom_classe', 'Class name');
+	 define('abre_classe', 'abbreviation of the class');
+	 define('des_classe', 'Description of the class');
+	 define('cat_classe', 'category of the class');
+	 
 ?>

@@ -1,12 +1,17 @@
 
- <link href="../Public_files/css/myheadcss.css" rel="stylesheet">
+ <link href="../public_files/css/myheadcss.css" rel="stylesheet">
   <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
 
             <!--logo start-->
-            <a href="../public_files/index.html" class="logo">LOGO <span class="lite">LYCEE</span></a>
+            <?php if(empty($etablissement->getlogo())){
+            echo '<a href="../public_files/index.html" class="logo">LOGO <span class="lite">LYCEE</span></a>';
+             }else{
+            echo '<a href="../public_files/index.html" class="logo"><img src="../public_files/img/home/'.$etablissement->getlogo().'"></img></a>';
+                }?>
+            
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
