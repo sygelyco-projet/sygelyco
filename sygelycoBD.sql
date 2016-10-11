@@ -174,6 +174,7 @@ CREATE TABLE sequence(
         id              int (11) Auto_increment  NOT NULL ,
         nom_seq         Varchar (25) NOT NULL ,
         description_seq Text ,
+        abrege_sequence  Varchar (25),
 		id_utilisateur   Int NOT NULL ,
         PRIMARY KEY (id ) ,
         UNIQUE (nom_seq )

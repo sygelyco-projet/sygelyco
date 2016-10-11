@@ -8,7 +8,7 @@ $home_path='http://127.0.0.1/sygelyco';
 session_cache_limiter('private');
 
 /* Configure le délai d'expiration à 30 minutes */
-session_cache_expire(30);
+session_cache_expire(5);
 
 /* Démarre la session */
 

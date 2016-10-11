@@ -124,6 +124,18 @@
 	 define('abre_classe', 'abréviation de la classe');
 	 define('des_classe', 'Description de la classe');
 	 define('cat_classe', 'catégorie de la classe');
+
+	 //matiere
+	 define('welcome_matiere', 'Enregistrer une matiere');
+	 define('nom_matiere', 'Nom de la matiere');
+	 define('abre_matiere', 'abréviation de la matiere');
+	 define('des_matiere', 'Description de la matiere');
+
+	 //sequence
+	 define('welcome_seq', 'Enregistrer une séquence');
+	 define('nom_seq', 'Nom séquence');
+	 define('abre_seq', 'abréviation de la séquence');
+	 define('des_seq', 'Description séquence');
 	 
 
 ?>

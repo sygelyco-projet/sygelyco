@@ -35,7 +35,7 @@ else if(($cl2!="")&&($classe->check($cl2)==1)){
 }
 else{
 	$classe->save($cl1,$abr1,$des1,$cat1);
-	if($cl2!="") $classe->save($cl2,$abr2,$des2,$cat2);
+	if(($cl2!="")&&(!ctype_space($cl2))) $classe->save($cl2,$abr2,$des2,$cat2);
 	$rep["statut"]="success";
 	echo json_encode($rep);
 }
