@@ -5,15 +5,28 @@ global $home_path;
 $home_path='http://127.0.0.1/sygelyco';
 /* Configure le limiteur de cache à 'private' */
 
-session_cache_limiter('private');
+//session_cache_limiter('private');
 
 /* Configure le délai d'expiration à 30 minutes */
-session_cache_expire(5);
+//session_cache_expire(5);
 
 /* Démarre la session */
 
 if (session_id() == "") 
-    session_start();   
+    session_start();  
+
+    if(isset($_SESSION['expire'])){
+        $now = time(); // checking the time now when home page starts
+
+    if($now > $_SESSION['expire'])
+    {
+        session_destroy();
+        $url=$home_path.'/index.php?lang='.$_GET['lang']; 
+		header('Refresh:0;'.$url.'');
+    }
+    }
+    
+
 $req = $db->query('SELECT id_anne_scolaire FROM etablissement');
 $donnees = $req->fetch();
 $_SESSION['id_anne_scolaire']=$donnees['id_anne_scolaire'];
