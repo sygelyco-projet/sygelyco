@@ -1,6 +1,7 @@
 $(document).ready( function () {
 
   $("#register_cycle").validate({
+	  var msg1="Please enter a cycle name.";
             rules: {
                 cycle_name1: {
                     required: true,
@@ -12,7 +13,7 @@ $(document).ready( function () {
             },
             messages: {                
                 cycle_name1: {
-                    required: "Please enter a cycle name.",
+                    required: msg1,
                     minlength: "Your cycle name must consist of at least 5 characters long."
                 },
                 cycle_name2: {

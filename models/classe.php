@@ -48,6 +48,13 @@ public function save($cl,$abr,$description_cl,$id_cat){
             ));
 }
 	
+public function allclasse(){
+			global $db;
+            $req = $db->query('SELECT * FROM classe');
+            $find = $req->fetchAll();
+            return $find;
+}
+
 }
 
 ?>
