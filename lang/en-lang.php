@@ -123,5 +123,16 @@
 	 define('abre_classe', 'abbreviation of the class');
 	 define('des_classe', 'Description of the class');
 	 define('cat_classe', 'category of the class');
-	 
+
+	 //matiere
+	 define('welcome_matiere', 'Register a course');
+	 define('nom_matiere', 'Course name');
+	 define('abre_matiere', 'abbreviation of the course');
+	 define('des_matiere', 'Description of the course');
+
+	 //sequence
+	 define('welcome_seq', 'Sequence recording');
+	 define('nom_seq', 'Sequence name');
+	 define('abre_seq', 'abbreviation of the Sequence');
+	 define('des_seq', 'Description of Sequence');
 ?>

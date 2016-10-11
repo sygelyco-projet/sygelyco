@@ -24,7 +24,7 @@ if($niveau->check($cat1)==1){
 }
 else{
 	$niveau->save($cat1,$des1,$cycle1);
-	if($cat2!="") $niveau->save($cat2,$des2,$cycle2);
+	if(($cat2!="")&&(!ctype_space($cat2))) $niveau->save($cat2,$des2,$cycle2);
 	$rep["statut"]="success";
 	echo json_encode($rep);
 }

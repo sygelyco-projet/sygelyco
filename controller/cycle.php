@@ -23,7 +23,7 @@ if($cycle->check($cycle1)==1){
 }
 else{
 	$cycle->save($cycle1,$des1);
-	if($cycle2!="") $cycle->save($cycle2,$des2);
+	if(($cycle2!="")&&(!ctype_space($cycle2))) $cycle->save($cycle2,$des2);
 	$rep["statut"]="success";
 	echo json_encode($rep);
 }
