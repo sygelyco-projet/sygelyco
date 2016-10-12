@@ -15,8 +15,12 @@ $req->execute(array(
 	  foreach($retour as  $rep)
 {
 	 $_SESSION['user'] = $rep;
+
 	
 }
+$_SESSION['start'] = time();
+$_SESSION['expire'] = $_SESSION['start'] + 300 ; // ending a session in 5 miniutes
+    
   // $_SESSION['id_anne_scolaire'];
 echo "1";
 }else{

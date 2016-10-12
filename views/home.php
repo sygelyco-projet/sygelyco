@@ -12,6 +12,9 @@ if(!isset($_GET['lang']))  $_GET['lang']='fr';
 $url='../index.php?lang='.$_GET['lang']; 
 header('Refresh:0;'.$url.'');
 }
+$_SESSION['start'] = time();
+$_SESSION['expire'] = $_SESSION['start'] + 300 ;
+
 $etablissement=new Etablissement();
 $etablissement->getcurrentEtablissement();
 $cycle=new Cycle();
