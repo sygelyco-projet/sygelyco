@@ -2,29 +2,17 @@
 if (session_id() == "") 
     session_start(); 
 	require '../connexionBD/connexionBD.php';
-	require '../models/cycle.php';
+	require '../models/matiere.php';
 	require 'home_path.php';
 
-$cycle1 = $_POST['cycle_name1'];
-$des1 = $_POST['des_cycle1'];
-$cycle2 = $_POST['cycle_name2'];
-$des2 = $_POST['des_cycle2'];
+$classe = htmlentities(intval($_GET['classe']));
 
-$cycle=new Cycle();
+	$rep = $db->prepare("SELECT `id_matiere`,`nom_mat` FROM `matiere_classe` mc,`matiere` m WHERE mc.`id_classe`='".$classe."' and mc.`id_matiere`=m.`id` ");
+	$rep->execute( array() );
+	while ($donnees =  $rep->fetch())
+    {
+		$json[$donnees['id_matiere']][] = utf8_encode($donnees['nom_mat']);
+	}
 
-if($cycle->check($cycle1)==1){
-	$rep["statut"]="exist";
-	$rep["mesg"]=$cycle1;
-	echo json_encode($rep);
-}else if(($cycle2!="")&&($cycle->check($cycle2)==1)){
-	$rep["statut"]="exist";
-	$rep["mesg"]=$cycle2;
-	echo json_encode($rep);
-}
-else{
-	$cycle->save($cycle1,$des1);
-	if($cycle2!="") $cycle->save($cycle2,$des2);
-	$rep["statut"]="success";
-	echo json_encode($rep);
-}
+echo json_encode($json);
 ?>

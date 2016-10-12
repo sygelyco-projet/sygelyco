@@ -2,36 +2,60 @@ $(document).ready(function() {
 	var $classe = $('#classe_name');
 	var $matiere = $('#matiere_name');
 	
-	// chargement des régions
-	$.ajax({
-		url: 'france.php',
-		data: 'go', // on envoie $_GET['go']
-		dataType: 'json', // on veut un retour JSON
-		success: function(json) {
-			$.each(json, function(index, value) { // pour chaque noeud JSON
-				// on ajoute l option dans la liste
-				$regions.append('<option value="'+ index +'">'+ value +'</option>');
-			});
-		}
-	});
-
-	// à la sélection d une région dans la liste
-	$regions.on('change', function() {
-		var val = $(this).val(); // on récupère la valeur de la région
-
+	
+	// à la sélection d une classe dans la liste
+	$classe.on('change', function() {
+		
+		var val = $(this).val(); // on récupère la valeur de la classe
+		$matiere.empty(); // on vide la liste des maiere
+		//alert(val);
 		if(val != '') {
-			$departements.empty(); // on vide la liste des départements
-			
 			$.ajax({
-				url: 'france.php',
-				data: 'id_region='+ val, // on envoie $_GET['id_region']
+				url: '../controller/note.php',
+				data: 'classe='+ val, // on envoie $_GET['classe']
 				dataType: 'json',
 				success: function(json) {
 					$.each(json, function(index, value) {
-						$departements.append('<option value="'+ index +'">'+ value +'</option>');
+						$matiere.append('<option value="'+ index +'">'+ value +'</option>');
 					});
 				}
 			});
 		}
 	});
-});
+	
+	   $("#register_note").on('click', function() {
+	var lang = $_GET('lang'); //on recupere la langue qui est en cour
+	if(lang==null) lang='fr';
+	
+     $.ajax({
+     success: function(msg){
+	 alert(lang);
+     }
+	 
+  });
+ });
+	
+	
+
+    
+	
+   
+ }
+ );
+ 
+
+
+function $_GET(param) {
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}

@@ -46,6 +46,13 @@ public function save($seq,$abr,$description_seq){
             'id_utilisateur' => $_SESSION['user']['id']
             ));
 }
+
+public function allsequence(){
+			global $db;
+            $req = $db->query('SELECT * FROM sequence');
+            $find = $req->fetchAll();
+            return $find;
+}
 	
 }
 

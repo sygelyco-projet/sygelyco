@@ -1,4 +1,6 @@
  <?php
+ require '../models/classe.php';
+  require '../models/sequence.php';
  require '../connexionBD/connexionBD.php';
  require '../controller/session.php';
  require '../models/etablissement.php';

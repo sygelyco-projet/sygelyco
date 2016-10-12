@@ -47,6 +47,15 @@ public function save($mat,$abr,$description_mat){
             ));
 }
 	
+public function allmatiere_par_classe($classe){
+	$rep = $db->prepare("SELECT `id_matiere`,`nom_mat` FROM `matiere_classe` mc,`matiere` m WHERE mc.`id_classe`='".$classe."' and mc.`id_matiere`=m.`id` ");
+	$rep->execute( array() );
+	$result= $rep->fetchAll();
+	return $result;
+}
+
+
+	
 }
 
 ?>

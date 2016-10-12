@@ -85,18 +85,7 @@ $(document).ready( function () {
              
         });
  
-  $("#lang_home").on('change', function() {
-  var lang = $(this).val(); // on récupère la lang
-  var menu = $_GET('menu'); //on recupere le menu en cours
-  $.ajax({
-     url: "../lang/decide-lang.php",
-     data: "lang="+lang,
-     success: function(msg){
-  if(menu==null) window.location='../index.php?lang='+lang;
-    else window.location='../index.php?lang='+lang+'&menu='+menu;
-     }
-  });
- });
+
  
  
 
