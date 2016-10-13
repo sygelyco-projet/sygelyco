@@ -12,8 +12,8 @@ if(!isset($_GET['lang']))  $_GET['lang']='fr';
 $url='../index.php?lang='.$_GET['lang']; 
 header('Refresh:0;'.$url.'');
 }
-$_SESSION['start'] = time();
-$_SESSION['expire'] = $_SESSION['start'] + 300 ;
+//$_SESSION['start'] = time();
+//$_SESSION['expire'] = $_SESSION['start'] + 300 ;
 
 $etablissement=new Etablissement();
 $etablissement->getcurrentEtablissement();
@@ -59,10 +59,11 @@ $categories=$categorie->allcategories();
 	<link href="../public_files/css/xcharts.min.css" rel=" stylesheet">	
 	<link href="../public_files/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 	<link href="../public_files/css/sb-admin-2.css" rel="stylesheet">
-		<script src="../public_files/js/jquery-1.8.3.min.js"></script>
+	<script src="../public_files/js/jquery-1.8.3.min.js"></script>
+	<script src="../public_files/ours_js/activite.js"></script>
   </head>
 
-  <body>
+  <body  onkeydown="activite_detectee = true;" onmousemove="activite_detectee = true;">
 
   
    <?php 

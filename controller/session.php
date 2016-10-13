@@ -15,7 +15,7 @@ $home_path='http://127.0.0.1/sygelyco';
 if (session_id() == "") 
     session_start();  
 
-    if(isset($_SESSION['expire'])){
+    /*if(isset($_SESSION['expire'])){
         $now = time(); // checking the time now when home page starts
 
     if($now > $_SESSION['expire'])
@@ -24,7 +24,7 @@ if (session_id() == "")
         $url=$home_path.'/index.php?lang='.$_GET['lang']; 
 		header('Refresh:0;'.$url.'');
     }
-    }
+    }*/
     
 
 $req = $db->query('SELECT id_anne_scolaire FROM etablissement');

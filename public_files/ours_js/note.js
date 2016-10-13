@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 	var $classe = $('#classe_name');
 	var $matiere = $('#matiere_name');
@@ -5,7 +6,7 @@ $(document).ready(function() {
 	
 	// à la sélection d une classe dans la liste
 	$classe.on('change', function() {
-		
+		//alert(id_annee);
 		var val = $(this).val(); // on récupère la valeur de la classe
 		$matiere.empty(); // on vide la liste des maiere
 		//alert(val);
@@ -23,26 +24,20 @@ $(document).ready(function() {
 		}
 	});
 	
-	   $("#register_note").on('click', function() {
+	   $("#register_note").on('submit', function() {
 	var lang = $_GET('lang'); //on recupere la langue qui est en cour
 	if(lang==null) lang='fr';
 	
      $.ajax({
      success: function(msg){
-	 alert(lang);
+	 $("span#tableau").load("gestion_eleve/tableau_enregistrement_notes.php?lang="+lang+"&classe="+$('#classe_name').val()+"&matiere="+$('#matiere_name').val()+"&sequence="+$('#seq_name').val()+"&id_annee="+id_annee+"&id_user="+id_user);
      }
 	 
   });
       return false;
- });
-	
-	
-
-    
-	
+ });	
    
- }
- );
+ });
  
 
 

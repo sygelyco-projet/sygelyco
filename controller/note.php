@@ -7,7 +7,7 @@ if (session_id() == "")
 
 $classe = htmlentities(intval($_GET['classe']));
 
-	$rep = $db->prepare("SELECT `id_matiere`,`nom_mat` FROM `matiere_classe` mc,`matiere` m WHERE mc.`id_classe`='".$classe."' and mc.`id_matiere`=m.`id` ");
+	$rep = $db->prepare("SELECT `id_matiere`,`nom_mat` FROM `matiere_classe` mc,`matiere` m WHERE mc.`id_classe`='".$classe."' and mc.`id_matiere`=m.`id` and mc.`id_anne_scolaire`='".$_SESSION['id_anne_scolaire']."'");
 	$rep->execute( array() );
 	while ($donnees =  $rep->fetch())
     {

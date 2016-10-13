@@ -15,7 +15,7 @@ $sequence=$sequence->allsequence();
                           </header>
                           <div class="panel-body well">
                               <div class="form">
-                                  <form class="form-validate form-vertical"  method="post" action="#" enctype="multipart/form-data">
+                                  <form class="form-validate form-vertical"  id="register_note" name="register_note" method="post" action="#" enctype="multipart/form-data">
                                       <div class="panel-body" style="border: 2px solid #d0bfbf; margin-bottom: 5px;">
                                       <div class="form-group ">
                                           <label for="full" class="control-label col-lg-1 ptext">Sequence<span class="required">* </span></label>
@@ -44,7 +44,7 @@ $sequence=$sequence->allsequence();
 											  </select>
                                           </div>
                                       
-									  <button class="btn btn-primary" type="submit" id="register_note" name="register_note">Aller à l'enregistrement</button>
+									  <button class="btn btn-primary" type="submit" >Aller à l'enregistrement</button>
                                       </div>
 									  </div>
                                   </form>
@@ -52,7 +52,7 @@ $sequence=$sequence->allsequence();
                           </div>
 						  
 						  
-						  <span id="tableau">
+						<span id="tableau">
 						</span><!-- span qui contiendra le tableau des notes -->
                       
 					  
@@ -60,5 +60,8 @@ $sequence=$sequence->allsequence();
                   </div>
               </div>
 
-<script src="../public_files/ours_js/note.js"></script>
+<script > var id_annee = <?php echo $_SESSION["id_anne_scolaire"]; ?>;
+		  var id_user = <?php echo $_SESSION['user']['id'] ; ?>; 
+		  <?php include("../public_files/ours_js/note.js"); ?>
+</script>
 
